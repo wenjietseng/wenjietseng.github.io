@@ -1,43 +1,13 @@
 ---
-title: "Home"
+title: "About"
 output: html_document
 ---
 
-<style type="text/css">
-.title {
-  display: none;
-}
+I am a Ph.D. student working on Human-Computer Interaction (HCI) and Virtual Realty (VR) research at TU Darmstadt, Germany, previously in the [DIVA Group](https://diva.telecom-paristech.fr/) at Telecom Paris, France.
 
-#getting-started img {
-  margin-right: 10px;
-}
+VR induces a dual-environment paradigm where the virtual space overlays the real-world surroundings. VR participants are visually disconnected from their real-world environment. New safety challenges emerge when people can use VR everywhere, like their homes, which are usually less controlled. My current research interest focuses on understanding people's cognitive and behavioral processes in the dual-environment paradigm from the VR perspective. Please see [Projects](https://wenjietseng.com/wjiesite/projects.html) to know more.
 
-</style>
+I finished my Master's degree at National Chiao Tung University, Taiwan, exploring how to integrate input controls and haptic outputs with VR head-mounted displays.
+<!-- [CV](/assets/pdf/WJT_CV.pdf)  -->
 
-<div class="row" style="padding-top: 30px;">
-<div class="col-sm-6">
-
-# **My Lab Journal**
-
-This is a template example for lab journaling. Students in Matt Crump's Human Cognition and Performance Lab will use this template to learn R, and other things. Students can replace this text with more fun things. People not in my lab can use this too.
-
-## How to use
-
-1. fork the repo for this website and follow instructions on read me to get set up. [https://github.com/CrumpLab/LabJournalWebsite](https://github.com/CrumpLab/LabJournalWebsite)
-
-2. Blog/journal what you are doing in R, by editing the Journal.Rmd. See the [Journal page](https://crumplab.github.io/LabJournalWebsite/Journal.html) for an example of what to do to get started learning R.
-
-3. See the [links page](https://crumplab.github.io/LabJournalWebsite/Links.html) for lots of helpful links on learning R.
-
-4. Change everything to make it your own.
-
-
-</div>
-<div class="col-sm-6">
-
-### [Crump Lab: Human Cognition and Performance](https://crumplab.github.io)
-
-<a href = "https://crumplab.github.io">
-![](images/logo.png)
-</a>
-</div>
+<!-- This site is inspired by the following rmarkdown websites: [LabJournal from CrumpLab](https://github.com/CrumpLab/LabJournalWebsite) and [privefl](https://github.com/privefl/rmarkdown-website-template?tab=readme-ov-file). -->

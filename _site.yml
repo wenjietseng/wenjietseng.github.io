@@ -1,11 +1,27 @@
-name: "MyLabJournal"
-navbar:
-  title: "MyLabJournal"
-  left:
-    - text: "Home"
-      href: index.html
-    - text: "Journal"
-      href: Journal.html
-    - text: "Links"
-      href: Links.html
+name: "wjtseng"
 output_dir: "docs"
+navbar:
+  title: "Wen-Jie Tseng"
+  type: inverse
+  left:
+    - text: "About"
+      href: index.html
+    - text: "Research"
+      href: research.html
+    - text: "Teaching"
+      href: teaching.html
+right:
+  - icon: fa-envelope-o fa
+    href: mailto:wen-jie.tseng@tu-darmstadt.de
+  - icon: ai-google-scholar ai
+    href: https://scholar.google.com/citations?user=1XUzM-UAAAAJ&hl=en
+  - icon: fa-github fa
+    href: https://github.com/wenjietseng 
+  - icon: fa-twitter fa
+    href: https://twitter.com/wenjie_tseng
+output:
+  html_document:
+    theme: readable
+    highlight: textmate
+    self_contained: no
+# rmarkdown::render_site(encoding = "UTF-8")

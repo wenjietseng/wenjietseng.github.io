@@ -5,23 +5,29 @@ navbar:
   type: inverse
   left:
     - text: "About"
+      icon: fa-home
       href: index.html
+    - text: "CV"
+      href: assets/pdf/WJT_CV.pdf
     - text: "Projects"
       href: projects.html
     - text: "Teaching"
       href: teaching.html
-right:
-  - icon: fa-envelope-o fa
-    href: mailto:wen-jie.tseng@tu-darmstadt.de
-  - icon: fa-google-scholar fa
-    href: https://scholar.google.com/citations?user=1XUzM-UAAAAJ&hl=en
-  - icon: fa-github fa
-    href: https://github.com/wenjietseng 
-  - icon: fa-twitter fa
-    href: https://twitter.com/wenjie_tseng
+  right:
+    - icon: fa-envelope fa
+      href: mailto:wen-jie.tseng@tu-darmstadt.de
+    - icon: ai ai-google-scholar-square
+      href: https://scholar.google.com/citations?user=1XUzM-UAAAAJ&hl=en
+    - icon: fa-github fa
+      href: https://github.com/wenjietseng 
+    - icon: fa-twitter fa
+      href: https://twitter.com/wenjie_tseng
 output:
   html_document:
     theme: readable
     highlight: textmate
     self_contained: no
+    css:
+    - resume
+    - https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css    
 # rmarkdown::render_site(encoding = "UTF-8")

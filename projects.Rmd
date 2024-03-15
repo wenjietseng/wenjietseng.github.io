@@ -5,7 +5,29 @@ output:
     toc: true
     toc_float: true
     collapsed: false
-    number_sections: false
+    number_sections: true
     toc_depth: 1
     #code_folding: hide
 ---
+
+Working ...
+
+<!-- # Dual Environments in VR -->
+
+<!-- spatial updating and spatial presence -->
+
+<!-- # Physical Breakdowns -->
+
+<!-- ## Breaking out -->
+<!-- ## FingerMapper -->
+<!-- ## VPPM, XRMM -->
+
+<!-- # HMD++ -->
+
+<!-- FacePush, FaceWidgets, Skin-Strokes -->
+
+<!-- # Future Directions -->
+
+<!-- - fNIRS, (computational) cognitive modeling -->
+<!-- - statistical modeling data (FearVR) -->
+<!-- - statistics and experiment design -->

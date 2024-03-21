@@ -3,11 +3,26 @@ title: "About"
 output: html_document
 ---
 
-I am a Ph.D. student working on Human-Computer Interaction (HCI) and Virtual Realty (VR) research at TU Darmstadt, Germany, previously in the [DIVA Group](https://diva.telecom-paristech.fr/) at Telecom Paris, France.
+I am a Ph.D. student working on Human-Computer Interaction (HCI) and Virtual Reality (VR) research. I work at TU Darmstadt, Germany, and previously in the [DIVA Group](https://diva.telecom-paristech.fr/) at Telecom Paris, France.
 
-VR induces a dual-environment paradigm where the virtual space overlays the real-world surroundings. VR participants are visually disconnected from their real-world environment. New safety challenges emerge when people can use VR everywhere, like their homes, which are usually less controlled and may lead to accidents or injuries. My current research interest focuses on understanding people's cognitive and behavioral processes in the dual-environment paradigm from the VR perspective. Please see [Projects](https://wenjietseng.com/wjiesite/projects.html) to know more.
+My current research interest focuses on understanding people's cognitive and behavioral processes in the dual-environment paradigm from the VR perspective by conducting experiments. Additionally, I design interaction techniques to reduce collisions with the real-world environment and explore future safety risks in VR. Please see [projects](projects.html) to know more.
 
-I finished my Master's degree at National Chiao Tung University, Taiwan, exploring how to integrate input controls and haptic outputs with VR head-mounted displays.
+In 2019, I completed my Master's degree at National Chiao Tung University, Taiwan. My projects explored integrating input controls and haptic outputs with VR head-mounted displays.
 
 
-<!-- This site is inspired by the following rmarkdown websites: [LabJournal from CrumpLab](https://github.com/CrumpLab/LabJournalWebsite) and [privefl](https://github.com/privefl/rmarkdown-website-template?tab=readme-ov-file). -->
+<center>
+![](assets/img/breakout.png){border-radius=10px, width=150px}
+![](assets/img/collision.png){border-radius=10px, width=150px}
+![](assets/img/fm.png){border-radius=10px, width=150px}
+![](assets/img/vppm.jpg){border-radius=10px, width=150px}
+![](assets/img/housevibe.jpg){border-radius=10px, width=150px}
+
+
+![](assets/img/skin-stroke2.jpg){border-radius=10px, width=150px}
+![](assets/img/facewidgets.JPG){border-radius=10px, width=150px}
+![](assets/img/facepush.png){border-radius=10px, width=150px}
+![](assets/img/fisherman-thumb.png){width=150px}
+</center>
+
+
+

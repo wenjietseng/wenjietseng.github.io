@@ -1,0 +1,12 @@
+---
+title: "Thesis Topics"
+output: html_document
+---
+
+If you are interested, or you want to do your original idea, feel free to contact me!
+
+### Spatial updating in virtual reality with body-based cues (BS/MS)
+- requirements:
+  - design and run experiments
+  - analyzing data (R/Python)
+  

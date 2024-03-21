@@ -5,13 +5,16 @@ navbar:
   type: inverse
   left:
     - text: "About"
-      icon: fa-home
+      # icon: fa-home
       href: index.html
     - text: "CV"
+      # icon: fa-solid fa-file
       href: assets/pdf/WJT_CV.pdf
-    - text: "Projects"
+    - text: "Research"
+      # icon: fa-solid fa-book-open
       href: projects.html
     - text: "Teaching"
+      # icon: fa-solid fa-person-chalkboard
       href: teaching.html
   right:
     - icon: fa-envelope fa
@@ -24,10 +27,13 @@ navbar:
       href: https://twitter.com/wenjie_tseng
 output:
   html_document:
+    includes:
+      after_body: assets/html/footer.Rhtml
     theme: readable
     highlight: textmate
     self_contained: no
-    css:
+    css: 
+    - assets/css/style.css
     - resume
-    - https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css    
+    - https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css
 # rmarkdown::render_site(encoding = "UTF-8")

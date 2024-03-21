@@ -1,33 +1,55 @@
 ---
-title: "Projects"
+title: "Research Projects"
 output:
   html_document:
     toc: true
     toc_float: true
     collapsed: false
-    number_sections: true
-    toc_depth: 1
+    number_sections: false
+    toc_depth: 3
     #code_folding: hide
 ---
 
-Working ...
+### New Spaces to Use VR
 
-<!-- # Dual Environments in VR -->
+Virtual Reality (VR) technology has become ubiquitous. People can immerse themselves in new places like their homes. This new ability comes with new challenges. Unlike VR demos at labs, these spaces are usually uncontrolled. While VR participants are visually disconnected from their real-world environment, interacting within an uncontrolled space may expose them to accident and safety risks like collisions.
 
-<!-- spatial updating and spatial presence -->
+### Physical Breakdowns
 
-<!-- # Physical Breakdowns -->
+In my thesis, I define these accidents as the physical breakdown in VR — an abrupt disruption of the VR experience caused by a collision with the real-world environment. My research investigates the reasons for physical breakdowns, provide solutions, and explore future mechanisms that could perpetuate safety risks. 
 
-<!-- ## Breaking out -->
-<!-- ## FingerMapper -->
-<!-- ## VPPM, XRMM -->
+1. Wen-Jie Tseng, Petros Dimitrios Kontrazis, Eric Lecolinet, Samuel Huron, and Jan Gugenheimer, IEEE VR ’24. Understanding Interaction and Breakouts of Safety Boundaries in Virtual Reality Through Mixed-Method Studies. [paper]()
 
-<!-- # HMD++ -->
+2. Wen-Jie Tseng, Samuel Huron, Eric Lecolinet, and Jan Gugenheimer, ACM CHI '23. FingerMapper: Mapping Finger Motions onto Virtual Arms to Enable Safe Virtual Reality Interaction in Confined Spaces. [paper](https://arxiv.org/abs/2302.11865)
 
-<!-- FacePush, FaceWidgets, Skin-Strokes -->
+<center><iframe width="560" height="315" src="https://www.youtube.com/embed/E4x1Aw_meiw?si=LhM0Hwout1Glmwbx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></center>
 
-<!-- # Future Directions -->
+3. Wen-Jie Tseng, ACM CHI EA '23. Understanding Physical Breakdowns in Virtual Reality. [paper](https://hal.science/hal-04510489)
 
-<!-- - fNIRS, (computational) cognitive modeling -->
-<!-- - statistical modeling data (FearVR) -->
-<!-- - statistics and experiment design -->
+4. Wen-Jie Tseng, Elise Bonnail, Mark McGill, Mohamed Khamis, Eric Lecolinet, Samuel Huron, and Jan Gugenheimer, ACM CHI '22. The Dark Side of Perceptual Manipulations in Virtual Reality. [paper](https://arxiv.org/abs/2202.13200)
+
+<center><iframe width="560" height="315" src="https://www.youtube.com/embed/uJRCchb_kAI?si=C_4EhthFa43i1jml" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></center>
+
+### HMD+
+
+When I was working as an MS student at Liwei's lab in Taiwan, we were interested in combining haptic feedback with VR head-mounted displays (HMD). Therefore, we explored several modalities with HMDs, like motors, buttons, and airflow, leading to the following projects. Many thanks to my labmates back then and Liwei.
+
+5. Wen-Jie Tseng, Yi-Chen Lee, Roshan Lalintha Peiris, and Liwei Chan. CHI '20. A Skin-Stroke Display on the Eye-Ring Through Head-Mounted Displays. [paper](https://doi.org/10.1145/3313831.3376700)
+
+<center><iframe width="560" height="315" src="https://www.youtube.com/embed/zB_UXC9lZF0?si=VLI0TRVXVEYHdUMs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></center>
+
+6. Wen-Jie Tseng, Li-Yang Wang, and Liwei Chan. ACM UIST '19. FaceWidgets: Exploring Tangible Interaction on Face with Head-Mounted Displays. [paper](https://doi.org/10.1145/3332165.3347946) 
+
+<center><iframe width="560" height="315" src="https://www.youtube.com/embed/e_Bty05zuAc?si=slAPqxfWtJkYALuV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></center>
+
+7. Hong-Yu Chang, Wen-Jie Tseng, Chia-En Tsai, Hsin-Yu Chen, Roshan Lalintha Peiris, and Liwei Chan. ACM UIST '18. FacePush: Introducing Normal Force on Face with Head-Mounted Displays. [paper](https://doi.org/10.1145/3242587.3242588)
+
+<center><iframe width="560" height="315" src="https://www.youtube.com/embed/IPLVCdbvWyI?si=ZL409XGX1gs3GzuV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></center>
+
+### Ongoing & Future Research
+
+There are several research ideas/directions I am interested in working on. Overall, I want to investigate our cognitive and behavioral processes in HCI/VR/XR.
+
+- How do we update spatial information in the dual-environment (virtual and real-world) paradigm? Also, how is this cognitive process related to spatial presence in VR?
+- Design components in VR safety mechanisms, like predicting collisions and the timing to trigger visual indicators.
+- Physiological sensing to measure VR constructs like presence and embodiment.

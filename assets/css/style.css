@@ -1,0 +1,12 @@
+img {
+  max-width: 100%;
+  vertical-align: middle;
+  .project-img &:hover {
+    border-radius: 10px;
+    // opacity: 0.8; /* 1 = 100%, 0 = 0% */
+
+    /* or the drop-shadow effect */
+    
+    box-shadow: 0 1px 4px black; /* goes x-axis, y-axis, blur, (stretch factor on x-axis, not used here), colour */
+  }
+}

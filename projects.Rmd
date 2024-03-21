@@ -52,4 +52,4 @@ There are several research ideas/directions I am interested in working on. Overa
 
 - How do we update spatial information in the dual-environment (virtual and real-world) paradigm? Also, how is this cognitive process related to spatial presence in VR?
 - Design components in VR safety mechanisms, like predicting collisions and the timing to trigger visual indicators.
-- Physiological sensing to measure VR constructs like presence and embodiment.
+- Using physiological or neural data to understand VR constructs like presence, embodiment, and more. :)

@@ -19,7 +19,7 @@ navbar:
   right:
     - icon: fa-envelope fa
       href: mailto:wen-jie.tseng@tu-darmstadt.de
-    - icon: ai ai-google-scholar-square
+    - icon: ai-google-scholar-square ai 
       href: https://scholar.google.com/citations?user=1XUzM-UAAAAJ&hl=en
     - icon: fa-github fa
       href: https://github.com/wenjietseng 

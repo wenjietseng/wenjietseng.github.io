@@ -4,7 +4,7 @@ output: html_document
 ---
 
 I am a postdoctoral researcher at [HCI Sorbonne](https://hci.isir.upmc.fr/), Institute for Intelligent Systems and Robotics (ISIR), Sorbonne University, France.
-I received my Ph.D. from the Department of Computer Science, Technical University of Darmstadt, Germany.
+I received my Ph.D. from the Department of Computer Science, Technical University of Darmstadt, Germany, where I worked at the [HCI Labs](https://www.informatik.tu-darmstadt.de/hci/hci_tuda/index.en.jsp).
 During my PhD, I did my research stay at the [Human-Centred Computing Section](https://di.ku.dk/english/research/human-centred-computing/), University of Copenhagen, Denmark.
 Previously, I worked as a doctoral student at [DIVA Group](https://diva.telecom-paristech.fr/), Télécom Paris, France.
 

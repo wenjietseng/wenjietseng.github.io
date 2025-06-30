@@ -10,13 +10,14 @@ output:
     #code_folding: hide
 ---
 
-### New Spaces to Use VR
+### Being in Two Spaces
+#### Investigating and Mitigating Spatial Conflicts in Virtual Reality
 
-Virtual Reality (VR) technology has become ubiquitous. People can immerse themselves in new places like their homes. This new ability comes with new challenges. Unlike VR demos at labs, these spaces are usually uncontrolled. While VR participants are visually disconnected from their real-world environment, interacting within an uncontrolled space may expose them to accident and safety risks like collisions.
+<!-- Virtual Reality (VR) technology has become ubiquitous. People can immerse themselves in new places like their homes. This new ability comes with new challenges. Unlike VR demos at labs, these spaces are usually uncontrolled. While VR participants are visually disconnected from their real-world environment, interacting within an uncontrolled space may expose them to accident and safety risks like collisions. -->
 
-### Physical Breakdowns
+<!-- ### Physical Breakdowns -->
 
-In my thesis, I define these accidents as the physical breakdown in VR — an abrupt disruption of the VR experience caused by a collision with the real-world environment. My research investigates the reasons for physical breakdowns, provide solutions, and explore future mechanisms that could perpetuate safety risks. 
+<!-- In my thesis, I define these accidents as the physical breakdown in VR — an abrupt disruption of the VR experience caused by a collision with the real-world environment. My research investigates the reasons for physical breakdowns, provide solutions, and explore future mechanisms that could perpetuate safety risks.  -->
 
 1. Wen-Jie Tseng, Petros Dimitrios Kontrazis, Eric Lecolinet, Samuel Huron, and Jan Gugenheimer, IEEE VR ’24. Understanding Interaction and Breakouts of Safety Boundaries in Virtual Reality Through Mixed-Method Studies. [paper]()
 
@@ -46,10 +47,10 @@ When I was working as an MS student at Liwei's lab in Taiwan, we were interested
 
 <center><iframe width="560" height="315" src="https://www.youtube.com/embed/IPLVCdbvWyI?si=ZL409XGX1gs3GzuV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></center>
 
-### Ongoing & Future Research
+<!-- ### Ongoing & Future Research -->
 
-There are several research ideas/directions I am interested in working on. Overall, I want to investigate our cognitive and behavioral processes in HCI/VR/XR.
+<!-- There are several research ideas/directions I am interested in working on. Overall, I want to investigate our cognitive and behavioral processes in HCI/VR/XR. -->
 
-- How do we update spatial information in the dual-environment (virtual and real-world) paradigm? Also, how is this cognitive process related to spatial presence in VR?
-- Design components in VR safety mechanisms, like predicting collisions and the timing to trigger visual indicators.
-- Using physiological or neural data to understand VR constructs like presence, embodiment, and more. :)
+<!-- - How do we update spatial information in the dual-environment (virtual and real-world) paradigm? Also, how is this cognitive process related to spatial presence in VR? -->
+<!-- - Design components in VR safety mechanisms, like predicting collisions and the timing to trigger visual indicators. -->
+<!-- - Using physiological or neural data to understand VR constructs like presence, embodiment, and more. :) -->

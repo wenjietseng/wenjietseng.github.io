@@ -18,13 +18,15 @@ navbar:
       href: teaching.html
   right:
     - icon: fa-envelope fa
-      href: mailto:wen-jie.tseng@tu-darmstadt.de
+      href: mailto:wen-jie.tseng@sorbonne-universite.fr
     - icon: ai-google-scholar-square ai 
       href: https://scholar.google.com/citations?user=1XUzM-UAAAAJ&hl=en
     - icon: fa-github fa
       href: https://github.com/wenjietseng 
     - icon: fa-twitter fa
       href: https://twitter.com/wenjie_tseng
+    - icon: fa-linkedin fa
+      href: 
 output:
   html_document:
     includes:

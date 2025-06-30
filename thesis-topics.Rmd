@@ -2,8 +2,11 @@
 title: "Thesis Topics"
 output: html_document
 ---
-
 If you are interested, or you want to do your original idea, feel free to contact me!
+
+### Designing interaction techniques for transitioning between two environments in VR
+- Having Unity (C\#) and VR development experience is a plus.
+
 
 <!-- ### Spatial updating in virtual reality with body-based cues (BS/MS) -->
 <!-- - requirements: -->

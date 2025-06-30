@@ -26,7 +26,7 @@ navbar:
     - icon: fa-twitter fa
       href: https://twitter.com/wenjie_tseng
     - icon: fa-linkedin fa
-      href: 
+      href: https://www.linkedin.com/in/wen-jie-tseng-126510113
 output:
   html_document:
     includes:

@@ -3,9 +3,9 @@ title: "About"
 output: html_document
 ---
 
-I am a postdoc researcher at the [HCI Sorbonne](https://hci.isir.upmc.fr/) Group, Institute for Intelligent Systems and Robotics (ISIR), Sorbonne University, France.
+I am a postdoctoral researcher at the [HCI Sorbonne](https://hci.isir.upmc.fr/) Group, Institute for Intelligent Systems and Robotics (ISIR), Sorbonne University, France.
 I received my Ph.D. from the Department of Computer Science, Technical University of Darmstadt, Germany.
-Previously, I worked as a doctoral researcher at the [DIVA Group](https://diva.telecom-paristech.fr/), Télécom Paris, France.
+Previously, I worked as a doctoral student at the [DIVA Group](https://diva.telecom-paristech.fr/), Télécom Paris, France.
 
 My research interest is situated at the intersection between Human-Computer Interaction (HCI), Virtual Reality (VR), and Cognitive Science. For more details, please see my [research](projects.html).
 

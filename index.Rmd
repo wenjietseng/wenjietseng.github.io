@@ -8,7 +8,7 @@ I received my PhD from the Department of Computer Science, Technical University 
 During my PhD, I worked at
 
   * the [HCI Labs](https://www.informatik.tu-darmstadt.de/hci/hci_tuda/index.en.jsp), TU Darmstadt, Germany
-  * the [Human-Centred Computing Section](https://di.ku.dk/english/research/human-centred-computing/), University of Copenhagen, Denmark
+  * (research stay) the [Human-Centred Computing Section](https://di.ku.dk/english/research/human-centred-computing/), University of Copenhagen, Denmark
   * the [DIVA Group](https://diva.telecom-paristech.fr/), Télécom Paris, France
 
 My research interest is situated at the intersection between Human-Computer Interaction (HCI), Virtual Reality (VR), and Cognitive Science. For more details, please see my [research](projects.html).

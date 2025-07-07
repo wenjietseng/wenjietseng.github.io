@@ -12,7 +12,7 @@ navbar:
       href: assets/pdf/WJT_CV.pdf
     - text: "Research"
       # icon: fa-solid fa-book-open
-      href: projects.html
+      href: research.html
     - text: "Teaching"
       # icon: fa-solid fa-person-chalkboard
       href: teaching.html

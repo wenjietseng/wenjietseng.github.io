@@ -3,5 +3,5 @@ title: "Teaching"
 output: html_document
 ---
 
-- [Thesis topics](thesis-topics.html)
-- [Developing basic VR interaction using Unity](vr-unity.html)
+- [Thesis topics](t-thesis-topics.html)
+- [Developing basic VR interaction using Unity](t-vr-unity.html)

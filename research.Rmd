@@ -1,0 +1,8 @@
+---
+title: "Research"
+output: html_document
+---
+
+- [Measurements in XR](p-measurements-in-xr.html)
+- [My PhD Thesis: Spatial Conflicts in VR](p-phd-thesis.html)
+- [Haptic feedback on VR headsets](p-hmdplus.html)

@@ -11,7 +11,7 @@
 
 
 
-<title>Teaching</title>
+<title>HMD+</title>
 
 <script src="site_libs/header-attrs-2.28/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -29,6 +29,9 @@
        h6 {font-size: 12px;}
        code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
        pre:not([class]) { background-color: white }</style>
+<script src="site_libs/jqueryui-1.13.2/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
@@ -224,6 +227,69 @@ $(document).ready(function () {
 
 
 
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
 
 </head>
 
@@ -231,6 +297,16 @@ $(document).ready(function () {
 
 
 <div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
 
 
 
@@ -300,16 +376,53 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Teaching</h1>
+<h1 class="title toc-ignore">HMD+</h1>
+<h3 class="subtitle">Exploring Haptic Feedback on VR Head-Mounted
+Displays</h3>
 
 </div>
 
 
-<ul>
-<li><a href="t-thesis-topics.html">Thesis topics</a></li>
-<li><a href="t-vr-unity.html">Developing basic VR interaction using
-Unity</a></li>
-</ul>
+<p>When I was working as an MS student at Liwei’s lab in Taiwan, we were
+interested in combining haptic feedback with VR head-mounted displays
+(HMD). Therefore, we explored several modalities with HMDs, like motors,
+buttons, and airflow, leading to the following projects. Many thanks to
+my labmates back then and Liwei.</p>
+<ol start="5" style="list-style-type: decimal">
+<li>Wen-Jie Tseng, Yi-Chen Lee, Roshan Lalintha Peiris, and Liwei Chan.
+CHI ’20. A Skin-Stroke Display on the Eye-Ring Through Head-Mounted
+Displays. <a
+href="https://doi.org/10.1145/3313831.3376700">paper</a></li>
+</ol>
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zB_UXC9lZF0?si=VLI0TRVXVEYHdUMs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+</iframe>
+</center>
+<ol start="6" style="list-style-type: decimal">
+<li>Wen-Jie Tseng, Li-Yang Wang, and Liwei Chan. ACM UIST ’19.
+FaceWidgets: Exploring Tangible Interaction on Face with Head-Mounted
+Displays. <a
+href="https://doi.org/10.1145/3332165.3347946">paper</a></li>
+</ol>
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/e_Bty05zuAc?si=slAPqxfWtJkYALuV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+</iframe>
+</center>
+<ol start="7" style="list-style-type: decimal">
+<li>Hong-Yu Chang, Wen-Jie Tseng, Chia-En Tsai, Hsin-Yu Chen, Roshan
+Lalintha Peiris, and Liwei Chan. ACM UIST ’18. FacePush: Introducing
+Normal Force on Face with Head-Mounted Displays. <a
+href="https://doi.org/10.1145/3242587.3242588">paper</a></li>
+</ol>
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/IPLVCdbvWyI?si=ZL409XGX1gs3GzuV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+</iframe>
+</center>
+<!-- ### Ongoing & Future Research -->
+<!-- There are several research ideas/directions I am interested in working on. Overall, I want to investigate our cognitive and behavioral processes in HCI/VR/XR. -->
+<!-- - How do we update spatial information in the dual-environment (virtual and real-world) paradigm? Also, how is this cognitive process related to spatial presence in VR? -->
+<!-- - Design components in VR safety mechanisms, like predicting collisions and the timing to trigger visual indicators. -->
+<!-- - Using physiological or neural data to understand VR constructs like presence, embodiment, and more. :) -->
 
 &nbsp;
 
@@ -328,6 +441,8 @@ Unity</a></li>
 &nbsp;
 
 
+</div>
+</div>
 
 </div>
 
@@ -360,6 +475,35 @@ $(document).ready(function () {
 
 <!-- code folding -->
 
+<script>
+$(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>

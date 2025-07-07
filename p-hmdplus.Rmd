@@ -1,5 +1,6 @@
 ---
-title: "Research Projects"
+title: "HMD+"
+subtitle: Exploring Haptic Feedback on VR Head-Mounted Displays
 output:
   html_document:
     toc: true
@@ -9,29 +10,6 @@ output:
     toc_depth: 3
     #code_folding: hide
 ---
-
-### Being in Two Spaces
-#### Investigating and Mitigating Spatial Conflicts in Virtual Reality
-
-<!-- Virtual Reality (VR) technology has become ubiquitous. People can immerse themselves in new places like their homes. This new ability comes with new challenges. Unlike VR demos at labs, these spaces are usually uncontrolled. While VR participants are visually disconnected from their real-world environment, interacting within an uncontrolled space may expose them to accident and safety risks like collisions. -->
-
-<!-- ### Physical Breakdowns -->
-
-<!-- In my thesis, I define these accidents as the physical breakdown in VR — an abrupt disruption of the VR experience caused by a collision with the real-world environment. My research investigates the reasons for physical breakdowns, provide solutions, and explore future mechanisms that could perpetuate safety risks.  -->
-
-1. Wen-Jie Tseng, Petros Dimitrios Kontrazis, Eric Lecolinet, Samuel Huron, and Jan Gugenheimer, IEEE VR ’24. Understanding Interaction and Breakouts of Safety Boundaries in Virtual Reality Through Mixed-Method Studies. [paper]()
-
-2. Wen-Jie Tseng, Samuel Huron, Eric Lecolinet, and Jan Gugenheimer, ACM CHI '23. FingerMapper: Mapping Finger Motions onto Virtual Arms to Enable Safe Virtual Reality Interaction in Confined Spaces. [paper](https://arxiv.org/abs/2302.11865)
-
-<center><iframe width="560" height="315" src="https://www.youtube.com/embed/E4x1Aw_meiw?si=LhM0Hwout1Glmwbx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></center>
-
-3. Wen-Jie Tseng, ACM CHI EA '23. Understanding Physical Breakdowns in Virtual Reality. [paper](https://hal.science/hal-04510489)
-
-4. Wen-Jie Tseng, Elise Bonnail, Mark McGill, Mohamed Khamis, Eric Lecolinet, Samuel Huron, and Jan Gugenheimer, ACM CHI '22. The Dark Side of Perceptual Manipulations in Virtual Reality. [paper](https://arxiv.org/abs/2202.13200)
-
-<center><iframe width="560" height="315" src="https://www.youtube.com/embed/uJRCchb_kAI?si=C_4EhthFa43i1jml" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></center>
-
-### HMD+
 
 When I was working as an MS student at Liwei's lab in Taiwan, we were interested in combining haptic feedback with VR head-mounted displays (HMD). Therefore, we explored several modalities with HMDs, like motors, buttons, and airflow, leading to the following projects. Many thanks to my labmates back then and Liwei.
 

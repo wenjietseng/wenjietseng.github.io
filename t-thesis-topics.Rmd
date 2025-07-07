@@ -1,0 +1,16 @@
+---
+title: "Thesis/Internship Topics"
+output: html_document
+---
+
+If you are looking for a thesis/internship topic, please have a look in the following list. If you are interested, or you want to do your original idea, feel free to contact me!
+
+#### Designing interaction techniques for transitioning between the virtual and physical environments in VR
+- Having Unity (C\#) and VR development experience is a plus.
+
+
+<!-- ### Spatial updating in virtual reality with body-based cues (BS/MS) -->
+<!-- - requirements: -->
+<!--   - design and run experiments -->
+<!--   - analyzing data (R/Python) -->
+

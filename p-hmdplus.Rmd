@@ -20,23 +20,27 @@ Such an essential sense, however, is limited to vibrotactile feedback in most VR
 Although many researchers have designed haptic devices in the field of HCI and VR, they often focus on the hands.
 We aim to enable haptic input and output through Head-Mounted Displays (HMDs) to explore haptic feedback on the face.
 
-# FacePush
+# Output
+
+## FacePush
 Creating haptic feedback on face through a pulley system using motors install on the VR HMD.
 
 [`r fa("book")` UIST '18](https://doi.org/10.1145/3242587.3242588)
 [`r fa("youtube")`](https://www.youtube.com/watch?v=IPLVCdbvWyI)
 
-# FaceWidgets
-Installing physical controls, such as buttons and joysticks, on the HMD to support tangible input in VR.
-
-[`r fa("book")` UIST '19](https://doi.org/10.1145/3332165.3347946)
-[`r fa("youtube")`](https://www.youtube.com/watch?v=e_Bty05zuAc)
-
-# Skin-Stroke Display
+## Skin-Stroke Display
 Demonstrating skin-stroke feedback on face while using VR HMDs.
 
 [`r fa("book")` CHI '20](https://doi.org/10.1145/3313831.3376700)
 [`r fa("youtube")`](https://www.youtube.com/watch?v=zB_UXC9lZF0)
+
+# Input
+
+## FaceWidgets
+Installing physical controls, such as buttons and joysticks, on the HMD to support tangible input in VR.
+
+[`r fa("book")` UIST '19](https://doi.org/10.1145/3332165.3347946)
+[`r fa("youtube")`](https://www.youtube.com/watch?v=e_Bty05zuAc)
 
 # Fun Facts
 

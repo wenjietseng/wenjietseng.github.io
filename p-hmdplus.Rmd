@@ -11,19 +11,39 @@ output:
     #code_folding: hide
 ---
 
-When I was working as an MS student at Liwei's lab in Taiwan, we were interested in combining haptic feedback with VR head-mounted displays (HMD). Therefore, we explored several modalities with HMDs, like motors, buttons, and airflow, leading to the following projects. Many thanks to my labmates back then and Liwei.
+```{r load_packages, message=FALSE, warning=FALSE, include=FALSE} 
+library(fontawesome)
+```
 
-5. Wen-Jie Tseng, Yi-Chen Lee, Roshan Lalintha Peiris, and Liwei Chan. CHI '20. A Skin-Stroke Display on the Eye-Ring Through Head-Mounted Displays. [paper](https://doi.org/10.1145/3313831.3376700)
+Haptic feedback is indispensable to our everyday tasks, from tapping on a smartphone to crafting woodwork.
+Such an essential sense, however, is limited to vibrotactile feedback in most VR experiences, usually enabled by hand-held controllers.
+Although many researchers have designed haptic devices in the field of HCI and VR, they often focus on the hands.
+We aim to enable haptic input and output through Head-Mounted Displays (HMDs) to explore haptic feedback on the face.
 
-<center><iframe width="560" height="315" src="https://www.youtube.com/embed/zB_UXC9lZF0?si=VLI0TRVXVEYHdUMs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></center>
+# FacePush
+Creating haptic feedback on face through a pulley system using motors install on the VR HMD.
 
-6. Wen-Jie Tseng, Li-Yang Wang, and Liwei Chan. ACM UIST '19. FaceWidgets: Exploring Tangible Interaction on Face with Head-Mounted Displays. [paper](https://doi.org/10.1145/3332165.3347946) 
+[`r fa("book")` UIST '18](https://doi.org/10.1145/3242587.3242588)
+[`r fa("youtube")`](https://www.youtube.com/watch?v=IPLVCdbvWyI)
 
-<center><iframe width="560" height="315" src="https://www.youtube.com/embed/e_Bty05zuAc?si=slAPqxfWtJkYALuV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></center>
+# FaceWidgets
+Installing physical controls, such as buttons and joysticks, on the HMD to support tangible input in VR.
 
-7. Hong-Yu Chang, Wen-Jie Tseng, Chia-En Tsai, Hsin-Yu Chen, Roshan Lalintha Peiris, and Liwei Chan. ACM UIST '18. FacePush: Introducing Normal Force on Face with Head-Mounted Displays. [paper](https://doi.org/10.1145/3242587.3242588)
+[`r fa("book")` UIST '19](https://doi.org/10.1145/3332165.3347946)
+[`r fa("youtube")`](https://www.youtube.com/watch?v=e_Bty05zuAc)
 
-<center><iframe width="560" height="315" src="https://www.youtube.com/embed/IPLVCdbvWyI?si=ZL409XGX1gs3GzuV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></center>
+# Skin-Stroke Display
+Demonstrating skin-stroke feedback on face while using VR HMDs.
+
+[`r fa("book")` CHI '20](https://doi.org/10.1145/3313831.3376700)
+[`r fa("youtube")`](https://www.youtube.com/watch?v=zB_UXC9lZF0)
+
+# Fun Facts
+
+- Many thanks to the support of my labmates (Hong-Yu, Chia-En, Yi-Chen, Li-Yang, Chiu-Hsuan, and many others) in Taiwan and the HCI knowledge from Liwei.
+- Jan shared the same interest of putting stuff on VR headsets. With Samuel, we worked together as supervisors and PhD student but on a completely different topic!
+
+<!-- <center><iframe width="560" height="315" src="https://www.youtube.com/embed/IPLVCdbvWyI?si=ZL409XGX1gs3GzuV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></center> -->
 
 <!-- ### Ongoing & Future Research -->
 

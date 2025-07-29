@@ -42,9 +42,9 @@ library(fontawesome)
 
 - Changing methods: prototyping -> qualitative -> experiments
 - Old framing: [`r fa("book")` CHI Doctoral Consortium '23](https://hal.science/hal-04510489)
-- Changing places: Paris -> Darmstadt -> Copenhagen -> Darmstadt -> Paris
-- The finished and published order of my project
-- FM > VPPM/Breakout > SUP > peak-end BO | VPPM > FM > Breakout > Peak-End BO > SUP
+- Changing places: Paris, Darmstadt, and Copenhagen.
+- The finished order: FM > VPPM/Breakout > SUP > peak-end BO
+- The published order: VPPM > FM > Breakout > ?
 
 
 <!-- <center><iframe width="560" height="315" src="https://www.youtube.com/embed/E4x1Aw_meiw?si=LhM0Hwout1Glmwbx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></center> -->

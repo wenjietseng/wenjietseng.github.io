@@ -383,44 +383,51 @@ Displays</h3>
 </div>
 
 
-<p>Haptic feedback is indispensable to our everyday tasks, from tapping
-on a smartphone to crafting woodwork. Such an essential sense, however,
-is limited to vibrotactile feedback in most VR experiences, usually
-enabled by hand-held controllers. Although many researchers have
-designed haptic devices in the field of HCI and VR, they often focus on
-the hands. We aim to enable haptic input and output through Head-Mounted
-Displays (HMDs) to explore haptic feedback on the face.</p>
-<div id="output" class="section level1">
-<h1>Output</h1>
-<div id="facepush" class="section level2">
-<h2>FacePush</h2>
-<p>Creating haptic feedback on face through a pulley system using motors
-install on the VR HMD.</p>
+<p>Haptic feedback is indispensable to everyday tasks, from tapping on a
+smartphone to crafting woodwork. Such an essential sense, however, is
+limited to vibrotactile feedback in most VR experiences, usually enabled
+by hand-held controllers. Although many researchers have designed haptic
+devices in HCI and VR, they often focus on the hands. We aim to enable
+haptic input and output through Head-Mounted Displays (HMDs) to explore
+haptic feedback on the face.</p>
+<div id="facepush" class="section level1">
+<h1>FacePush</h1>
+<p><img src="assets/img/facepush.png" border-radius="10px,"
+width="150" /></p>
+<p>FacePush induces haptic feedback as output on the face through a
+pulley system using motors on the HMD. We implemented three applications
+to demonstrate FacePush: providing feedback when getting punched in a
+boxing game, simulating water currents on the face while swimming, and
+indicating where to look in a 360<span
+class="math inline">\(^\circ\)</span> video.</p>
 <p><a
 href="https://doi.org/10.1145/3242587.3242588"><svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M96 0C43 0 0 43 0 96V416c0 53 43 96 96 96H384h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V384c17.7 0 32-14.3 32-32V32c0-17.7-14.3-32-32-32H384 96zm0 384H352v64H96c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16zm16 48H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/></svg>
 UIST ’18</a> <a
-href="https://www.youtube.com/watch?v=IPLVCdbvWyI"><svg aria-hidden="true" role="img" viewBox="0 0 576 512" style="height:1em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg></a></p>
+href="https://www.youtube.com/watch?v=IPLVCdbvWyI"><svg aria-hidden="true" role="img" viewBox="0 0 576 512" style="height:1em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg>
+Video</a></p>
 </div>
-<div id="skin-stroke-display" class="section level2">
-<h2>Skin-Stroke Display</h2>
-<p>Demonstrating skin-stroke feedback on face while using VR HMDs.</p>
-<p><a
-href="https://doi.org/10.1145/3313831.3376700"><svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M96 0C43 0 0 43 0 96V416c0 53 43 96 96 96H384h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V384c17.7 0 32-14.3 32-32V32c0-17.7-14.3-32-32-32H384 96zm0 384H352v64H96c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16zm16 48H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/></svg>
-CHI ’20</a> <a
-href="https://www.youtube.com/watch?v=zB_UXC9lZF0"><svg aria-hidden="true" role="img" viewBox="0 0 576 512" style="height:1em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg></a></p>
-</div>
-</div>
-<div id="input" class="section level1">
-<h1>Input</h1>
-<div id="facewidgets" class="section level2">
-<h2>FaceWidgets</h2>
+<div id="facewidgets" class="section level1">
+<h1>FaceWidgets</h1>
+<p><img src="assets/img/facewidgets.JPG" border-radius="10px,"
+width="150" /></p>
 <p>Installing physical controls, such as buttons and joysticks, on the
 HMD to support tangible input in VR.</p>
 <p><a
 href="https://doi.org/10.1145/3332165.3347946"><svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M96 0C43 0 0 43 0 96V416c0 53 43 96 96 96H384h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V384c17.7 0 32-14.3 32-32V32c0-17.7-14.3-32-32-32H384 96zm0 384H352v64H96c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16zm16 48H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/></svg>
 UIST ’19</a> <a
-href="https://www.youtube.com/watch?v=e_Bty05zuAc"><svg aria-hidden="true" role="img" viewBox="0 0 576 512" style="height:1em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg></a></p>
+href="https://www.youtube.com/watch?v=e_Bty05zuAc"><svg aria-hidden="true" role="img" viewBox="0 0 576 512" style="height:1em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg>
+Video</a></p>
 </div>
+<div id="skin-stroke-display" class="section level1">
+<h1>Skin-Stroke Display</h1>
+<p><img src="assets/img/skin-stroke2.jpg" border-radius="10px,"
+width="150" /></p>
+<p>Demonstrating skin-stroke feedback on face while using VR HMDs.</p>
+<p><a
+href="https://doi.org/10.1145/3313831.3376700"><svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M96 0C43 0 0 43 0 96V416c0 53 43 96 96 96H384h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V384c17.7 0 32-14.3 32-32V32c0-17.7-14.3-32-32-32H384 96zm0 384H352v64H96c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16zm16 48H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/></svg>
+CHI ’20</a> <a
+href="https://www.youtube.com/watch?v=zB_UXC9lZF0"><svg aria-hidden="true" role="img" viewBox="0 0 576 512" style="height:1em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg>
+Video</a></p>
 </div>
 <div id="fun-facts" class="section level1">
 <h1>Fun Facts</h1>
@@ -430,7 +437,8 @@ Yi-Chen, Li-Yang, Chiu-Hsuan, and many others) in Taiwan and the HCI
 knowledge from Liwei.</li>
 <li>Jan shared the same interest of putting stuff on VR headsets. With
 Samuel, we worked together as supervisors and PhD student but on a
-completely different topic!</li>
+completely different topic (see <a href="p-phd-thesis.html">my PhD
+thesis</a>)!</li>
 </ul>
 <!-- <center><iframe width="560" height="315" src="https://www.youtube.com/embed/IPLVCdbvWyI?si=ZL409XGX1gs3GzuV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></center> -->
 <!-- ### Ongoing & Future Research -->

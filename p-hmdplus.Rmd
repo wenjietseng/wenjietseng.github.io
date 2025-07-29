@@ -15,37 +15,42 @@ output:
 library(fontawesome)
 ```
 
-Haptic feedback is indispensable to our everyday tasks, from tapping on a smartphone to crafting woodwork.
+Haptic feedback is indispensable to everyday tasks, from tapping on a smartphone to crafting woodwork.
 Such an essential sense, however, is limited to vibrotactile feedback in most VR experiences, usually enabled by hand-held controllers.
-Although many researchers have designed haptic devices in the field of HCI and VR, they often focus on the hands.
+Although many researchers have designed haptic devices in HCI and VR, they often focus on the hands.
 We aim to enable haptic input and output through Head-Mounted Displays (HMDs) to explore haptic feedback on the face.
 
-# Output
+# FacePush
 
-## FacePush
-Creating haptic feedback on face through a pulley system using motors install on the VR HMD.
+![](assets/img/facepush.png){border-radius=10px, width=150px}
+
+FacePush induces haptic feedback as output on the face through a pulley system using motors on the HMD. We implemented three applications to demonstrate FacePush: providing feedback when getting punched in a boxing game, simulating water currents on the face while swimming, and indicating where to look in a 360$^\circ$ video.
 
 [`r fa("book")` UIST '18](https://doi.org/10.1145/3242587.3242588)
-[`r fa("youtube")`](https://www.youtube.com/watch?v=IPLVCdbvWyI)
+[`r fa("youtube")` Video](https://www.youtube.com/watch?v=IPLVCdbvWyI)
 
-## Skin-Stroke Display
-Demonstrating skin-stroke feedback on face while using VR HMDs.
+# FaceWidgets 
 
-[`r fa("book")` CHI '20](https://doi.org/10.1145/3313831.3376700)
-[`r fa("youtube")`](https://www.youtube.com/watch?v=zB_UXC9lZF0)
+![](assets/img/facewidgets.JPG){border-radius=10px, width=150px}
 
-# Input
-
-## FaceWidgets
 Installing physical controls, such as buttons and joysticks, on the HMD to support tangible input in VR.
 
 [`r fa("book")` UIST '19](https://doi.org/10.1145/3332165.3347946)
-[`r fa("youtube")`](https://www.youtube.com/watch?v=e_Bty05zuAc)
+[`r fa("youtube")` Video](https://www.youtube.com/watch?v=e_Bty05zuAc)
+
+# Skin-Stroke Display
+
+![](assets/img/skin-stroke2.jpg){border-radius=10px, width=150px}
+
+Demonstrating skin-stroke feedback on face while using VR HMDs.
+
+[`r fa("book")` CHI '20](https://doi.org/10.1145/3313831.3376700)
+[`r fa("youtube")` Video](https://www.youtube.com/watch?v=zB_UXC9lZF0)
 
 # Fun Facts
 
 - Many thanks to the support of my labmates (Hong-Yu, Chia-En, Yi-Chen, Li-Yang, Chiu-Hsuan, and many others) in Taiwan and the HCI knowledge from Liwei.
-- Jan shared the same interest of putting stuff on VR headsets. With Samuel, we worked together as supervisors and PhD student but on a completely different topic!
+- Jan shared the same interest of putting stuff on VR headsets. With Samuel, we worked together as supervisors and PhD student but on a completely different topic (see [my PhD thesis](p-phd-thesis.html))!
 
 <!-- <center><iframe width="560" height="315" src="https://www.youtube.com/embed/IPLVCdbvWyI?si=ZL409XGX1gs3GzuV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></center> -->
 

@@ -3,6 +3,6 @@ title: "Research"
 output: html_document
 ---
 
-- [Measurements in XR](p-measurements-in-xr.html)
-- [My PhD Thesis: Spatial Conflicts in VR](p-phd-thesis.html)
-- [Haptic feedback on VR headsets](p-hmdplus.html)
+<!-- - [Measurements in XR](p-measurements-in-xr.html) -->
+- [Dissertation: Spatial Conflicts in VR](p-phd-thesis.html)
+- [Haptic Feedback on VR Headsets](p-hmdplus.html)

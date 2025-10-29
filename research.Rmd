@@ -1,6 +1,5 @@
 ---
-title: "Research"
-output: html_document
+title: "Understanding Bodily Experiences in Virtual Reality: From Lab to Diverse Physical Spaces"
 output:
   html_document:
     toc: true
@@ -14,7 +13,80 @@ output:
 library(fontawesome)
 ```
 
+Humans perceive and interact with their surroundings through their bodies. Our bodies allow us to touch and manipulate objects with our hands or navigate in a dark room, relying on our sense of body position. Investigating bodily experiences is central to understanding the body–mind connection and designing better human–computer interaction. Researchers use Virtual Reality (VR) to study virtual body illusions and 3D interaction. However, bodily experiences in VR still face several challenges: 1) the lack of haptic feedback; 2) the reliance on retrospective judgments, such as questionnaires, which may be prone to bias; and 3) the risk of colliding with physical objects when people are immersed in VR at home.
 
+# Current Research
+
+## Haptic Feedback
+
+Haptic feedback is indispensable to everyday tasks, from tapping on a smartphone to crafting woodwork.
+Such an essential sense, however, is limited to vibrotactile feedback in most VR experiences, usually enabled by hand-held controllers.
+Although many researchers have designed haptic devices in HCI and VR, they often focus on the hands.
+We aim to enable haptic input and output through Head-Mounted Displays (HMDs) to explore haptic feedback on the face.
+
+### FacePush
+
+![](assets/img/facepush.png){border-radius=10px, width=150px}
+
+FacePush induces haptic feedback as output on the face through a pulley system using motors on the HMD. We implemented three applications to demonstrate FacePush: providing feedback when getting punched in a boxing game, simulating water currents on the face while swimming, and indicating where to look in a 360$^\circ$ video.
+
+[`r fa("book")` UIST '18](https://doi.org/10.1145/3242587.3242588)
+[`r fa("youtube")` Video](https://www.youtube.com/watch?v=IPLVCdbvWyI)
+
+### FaceWidgets 
+
+![](assets/img/facewidgets.JPG){border-radius=10px, width=150px}
+
+We present FaceWidgets, a device integrated with the backside of a head-mounted display (HMD) that enables tangible interactions using physical controls. To allow for near range-to-eye interactions, our first study suggested displaying the virtual widgets at 20 cm from the eye positions, which is 9 cm from the HMD backside. We propose two novel interactions, widget canvas and palm-facing gesture, that can help users avoid double vision and allow them to access the interface as needed. Our second study showed that displaying a hand reference improved performance of face widgets interactions. We developed two applications of FaceWidgets, a fixed-layout 360 video player and a contextual input for smart home control. Finally, we compared four hand visualizations against the two applications in an exploratory study. Participants considered the transparent hand as the most suitable and responded positively to our system.
+
+[`r fa("book")` UIST '19](https://doi.org/10.1145/3332165.3347946)
+[`r fa("youtube")` Video](https://www.youtube.com/watch?v=e_Bty05zuAc)
+
+### Skin-Stroke Display
+
+![](assets/img/skin-stroke2.jpg){border-radius=10px, width=150px}
+
+We present the Skin-Stroke Display, a system mounted on the lens inside the head-mounted display, which exerts subtle yet recognizable tactile feedback on the eye-ring using a motorized air jet. To inform our design of noticeable air-jet haptic feedback, we conducted a user study to identify absolute detection thresholds. Our results show that the tactile sensation had different sensitivity around the eyes, and we determined a standard intensity (8 mbar) to prevent turbulent airflow blowing into the eyes. In the second study, we asked participants to adjust the intensity around the eye for equal sensation based on standard intensity. Next, we investigated the recognition of point and stroke stimuli with or without inducing cognitive load on eight directions on the eye-ring. Our longStroke stimulus can achieve an accuracy of 82.6% without cognitive load and 80.6% with cognitive load simulated by the Stroop test. Finally, we demonstrate example applications using the skin-stroke display as the off-screen indicator, tactile I/O progress display, and tactile display.
+
+[`r fa("book")` CHI '20](https://dl.acm.org/doi/abs/10.1145/3313831.3376700)
+[`r fa("youtube")` Video](https://www.youtube.com/watch?v=zB_UXC9lZF0)
+
+## Evaluation
+
+### Does the Peak-End Rule Apply to Judgments of Body Ownership in Virtual Reality?
+
+While body ownership is central to research in virtual reality (VR), it remains unclear how experiencing an avatar over time shapes a person's summary judgment of it. Such a judgment could be a simple average of the bodily experience, or it could follow the peak-end rule, which suggests that people's retrospective judgment correlates with the most intense and recent moments in their experiencing. We systematically manipulate body ownership over a three-minute avatar embodiment using visuomotor asynchrony. Asynchrony here serves to negatively influence body ownership.
+We conducted one lab study ($N=28$) and two online studies (pilot: $N=97$ and formal: $N=128$)
+to investigate the influence of visuomotor asynchrony given (1) order, meaning early or late, (2) duration and magnitude while controlling the order, and (3) the interaction between order and magnitude.
+Our results indicate a significant order effect---later visuomotor asynchrony decreased the rating of body-ownership judgments more---but no convergent evidence on magnitude. We discuss how body-ownership judgments may be formed sensorily or affectively.
+
+## Physical Spaces
+
+### Understanding Interaction and Breakouts of Safety Boundaries in Virtual Reality Through Mixed-Method Studies
+
+![](assets/img/breakout.png){border-radius=10px, width=150px}
+
+Virtual Reality (VR) technologies become ubiquitous, allowing people to employ immersive experiences in their homes. Since VR participants are visually disconnected from their real-world environment, commercial products propose safety boundaries to prevent colliding with their surroundings. However, there is a lack of empirical knowledge on how people perceive and interact with safety boundaries in everyday VR usage. This paper investigates this research gap with two mixed-method empirical studies. Study 1 reports an online survey (n=48) collecting data about attitudes towards safety boundaries, behavior while interacting with them, and reasons for breakout. Our analysis with open coding reveals that some VR participants ignored safety boundaries intentionally, even breaking out of them and continuing their actions. Study 2 investigates how and why VR participants intentionally break out when interacting close to safety boundaries and obstacles by replicating breakouts in a lab study (n=12). Our interview and breakout data discover three strategies, revealing VR participants sometimes break out of boundaries based on their real-world spatial information. Finally, we discuss improving future VR safety mechanisms by supporting participants’ real-world spatial mental models using landmarks.
+
+[`r fa("book")` IEEE VR '24](https://ieeexplore.ieee.org/abstract/document/10494194)
+
+### FingerMapper: Mapping Finger Motions onto Virtual Arms to Enable Safe Virtual Reality Interaction in Confined Spaces
+
+![](assets/img/fm.png){border-radius=10px, width=150px}
+
+Whole-body movements enhance the presence and enjoyment of Virtual Reality (VR) experiences. However, using large gestures is often uncomfortable and impossible in confined spaces (e.g., public transport). We introduce FingerMapper, mapping small-scale finger motions onto virtual arms and hands to enable whole-body virtual movements in VR. In a first target selection study (n=13) comparing FingerMapper to hand tracking and ray-casting, we found that FingerMapper can significantly reduce physical motions and fatigue while having a similar degree of precision. In a consecutive study (n=13), we compared FingerMapper to hand tracking inside a confined space (the front passenger seat of a car). The results showed participants had significantly higher perceived safety and fewer collisions with FingerMapper while preserving a similar degree of presence and enjoyment as hand tracking. Finally, we present three example applications demonstrating how FingerMapper could be applied for locomotion and interaction for VR in confined spaces.
+
+[`r fa("book")` CHI '23](https://dl.acm.org/doi/abs/10.1145/3544548.3580736)
+[`r fa("youtube")` Video](https://www.youtube.com/watch?v=E4x1Aw_meiw)
+
+### Perceptual Manipulations
+
+![](assets/img/vppm.jpg){border-radius=10px, width=150px}
+
+“Virtual-Physical Perceptual Manipulations” (VPPMs) such as redirected walking and haptics expand the user’s capacity to interact with Virtual Reality (VR) beyond what would ordinarily physically be possible. VPPMs leverage knowledge of the limits of human perception to effect changes in the user’s physical movements, becoming able to (perceptibly and imperceptibly) nudge their physical actions to enhance interactivity in VR. We explore the risks posed by the malicious use of VPPMs. First, we define, conceptualize and demonstrate the existence of VPPMs. Next, using speculative design workshops, we explore and characterize the threats/risks posed, proposing mitigations and preventative recommendations against the malicious use of VPPMs. Finally, we implement two sample applications to demonstrate how existing VPPMs could be trivially subverted to create the potential for physical harm. This paper aims to raise awareness that the current way we apply and publish VPPMs can lead to malicious exploits of our perceptual vulnerabilities.
+
+[`r fa("book")` CHI '22](https://dl.acm.org/doi/abs/10.1145/3491102.3517728)
+[`r fa("youtube")` Video](https://www.youtube.com/watch?v=uJRCchb_kAI)
 
 <!-- - [Measurements in XR](p-measurements-in-xr.html) -->
 <!-- - [Dissertation: Investigating Spatial Conflicts in VR](p-phd-thesis.html) -->

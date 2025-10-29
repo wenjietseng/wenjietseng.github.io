@@ -11,7 +11,7 @@
 
 
 
-<title>Research</title>
+<title>Understanding Bodily Experiences in Virtual Reality: From Lab to Diverse Physical Spaces</title>
 
 <script src="site_libs/header-attrs-2.28/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -29,6 +29,9 @@
        h6 {font-size: 12px;}
        code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
        pre:not([class]) { background-color: white }</style>
+<script src="site_libs/jqueryui-1.13.2/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
@@ -224,6 +227,69 @@ $(document).ready(function () {
 
 
 
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
 
 </head>
 
@@ -231,6 +297,16 @@ $(document).ready(function () {
 
 
 <div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
 
 
 
@@ -300,18 +376,220 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Research</h1>
+<h1 class="title toc-ignore">Understanding Bodily Experiences in Virtual
+Reality: From Lab to Diverse Physical Spaces</h1>
 
 </div>
 
 
+<p>Humans perceive and interact with their surroundings through their
+bodies. Our bodies allow us to touch and manipulate objects with our
+hands or navigate in a dark room, relying on our sense of body position.
+Investigating bodily experiences is central to understanding the
+body–mind connection and designing better human–computer interaction.
+Researchers use Virtual Reality (VR) to study virtual body illusions and
+3D interaction. However, bodily experiences in VR still face several
+challenges: 1) the lack of haptic feedback; 2) the reliance on
+retrospective judgments, such as questionnaires, which may be prone to
+bias; and 3) the risk of colliding with physical objects when people are
+immersed in VR at home.</p>
+<div id="current-research" class="section level1">
+<h1>Current Research</h1>
+<div id="haptic-feedback" class="section level2">
+<h2>Haptic Feedback</h2>
+<p>Haptic feedback is indispensable to everyday tasks, from tapping on a
+smartphone to crafting woodwork. Such an essential sense, however, is
+limited to vibrotactile feedback in most VR experiences, usually enabled
+by hand-held controllers. Although many researchers have designed haptic
+devices in HCI and VR, they often focus on the hands. We aim to enable
+haptic input and output through Head-Mounted Displays (HMDs) to explore
+haptic feedback on the face.</p>
+<div id="facepush" class="section level3">
+<h3>FacePush</h3>
+<p><img src="assets/img/facepush.png" border-radius="10px,"
+width="150" /></p>
+<p>FacePush induces haptic feedback as output on the face through a
+pulley system using motors on the HMD. We implemented three applications
+to demonstrate FacePush: providing feedback when getting punched in a
+boxing game, simulating water currents on the face while swimming, and
+indicating where to look in a 360<span
+class="math inline">\(^\circ\)</span> video.</p>
+<p><a
+href="https://doi.org/10.1145/3242587.3242588"><svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M96 0C43 0 0 43 0 96V416c0 53 43 96 96 96H384h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V384c17.7 0 32-14.3 32-32V32c0-17.7-14.3-32-32-32H384 96zm0 384H352v64H96c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16zm16 48H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/></svg>
+UIST ’18</a> <a
+href="https://www.youtube.com/watch?v=IPLVCdbvWyI"><svg aria-hidden="true" role="img" viewBox="0 0 576 512" style="height:1em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg>
+Video</a></p>
+</div>
+<div id="facewidgets" class="section level3">
+<h3>FaceWidgets</h3>
+<p><img src="assets/img/facewidgets.JPG" border-radius="10px,"
+width="150" /></p>
+<p>We present FaceWidgets, a device integrated with the backside of a
+head-mounted display (HMD) that enables tangible interactions using
+physical controls. To allow for near range-to-eye interactions, our
+first study suggested displaying the virtual widgets at 20 cm from the
+eye positions, which is 9 cm from the HMD backside. We propose two novel
+interactions, widget canvas and palm-facing gesture, that can help users
+avoid double vision and allow them to access the interface as needed.
+Our second study showed that displaying a hand reference improved
+performance of face widgets interactions. We developed two applications
+of FaceWidgets, a fixed-layout 360 video player and a contextual input
+for smart home control. Finally, we compared four hand visualizations
+against the two applications in an exploratory study. Participants
+considered the transparent hand as the most suitable and responded
+positively to our system.</p>
+<p><a
+href="https://doi.org/10.1145/3332165.3347946"><svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M96 0C43 0 0 43 0 96V416c0 53 43 96 96 96H384h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V384c17.7 0 32-14.3 32-32V32c0-17.7-14.3-32-32-32H384 96zm0 384H352v64H96c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16zm16 48H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/></svg>
+UIST ’19</a> <a
+href="https://www.youtube.com/watch?v=e_Bty05zuAc"><svg aria-hidden="true" role="img" viewBox="0 0 576 512" style="height:1em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg>
+Video</a></p>
+</div>
+<div id="skin-stroke-display" class="section level3">
+<h3>Skin-Stroke Display</h3>
+<p><img src="assets/img/skin-stroke2.jpg" border-radius="10px,"
+width="150" /></p>
+<p>We present the Skin-Stroke Display, a system mounted on the lens
+inside the head-mounted display, which exerts subtle yet recognizable
+tactile feedback on the eye-ring using a motorized air jet. To inform
+our design of noticeable air-jet haptic feedback, we conducted a user
+study to identify absolute detection thresholds. Our results show that
+the tactile sensation had different sensitivity around the eyes, and we
+determined a standard intensity (8 mbar) to prevent turbulent airflow
+blowing into the eyes. In the second study, we asked participants to
+adjust the intensity around the eye for equal sensation based on
+standard intensity. Next, we investigated the recognition of point and
+stroke stimuli with or without inducing cognitive load on eight
+directions on the eye-ring. Our longStroke stimulus can achieve an
+accuracy of 82.6% without cognitive load and 80.6% with cognitive load
+simulated by the Stroop test. Finally, we demonstrate example
+applications using the skin-stroke display as the off-screen indicator,
+tactile I/O progress display, and tactile display.</p>
+<p><a
+href="https://dl.acm.org/doi/abs/10.1145/3313831.3376700"><svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M96 0C43 0 0 43 0 96V416c0 53 43 96 96 96H384h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V384c17.7 0 32-14.3 32-32V32c0-17.7-14.3-32-32-32H384 96zm0 384H352v64H96c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16zm16 48H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/></svg>
+CHI ’20</a> <a
+href="https://www.youtube.com/watch?v=zB_UXC9lZF0"><svg aria-hidden="true" role="img" viewBox="0 0 576 512" style="height:1em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg>
+Video</a></p>
+</div>
+</div>
+<div id="evaluation" class="section level2">
+<h2>Evaluation</h2>
+<div
+id="does-the-peak-end-rule-apply-to-judgments-of-body-ownership-in-virtual-reality"
+class="section level3">
+<h3>Does the Peak-End Rule Apply to Judgments of Body Ownership in
+Virtual Reality?</h3>
+<p>While body ownership is central to research in virtual reality (VR),
+it remains unclear how experiencing an avatar over time shapes a
+person’s summary judgment of it. Such a judgment could be a simple
+average of the bodily experience, or it could follow the peak-end rule,
+which suggests that people’s retrospective judgment correlates with the
+most intense and recent moments in their experiencing. We systematically
+manipulate body ownership over a three-minute avatar embodiment using
+visuomotor asynchrony. Asynchrony here serves to negatively influence
+body ownership. We conducted one lab study (<span
+class="math inline">\(N=28\)</span>) and two online studies (pilot:
+<span class="math inline">\(N=97\)</span> and formal: <span
+class="math inline">\(N=128\)</span>) to investigate the influence of
+visuomotor asynchrony given (1) order, meaning early or late, (2)
+duration and magnitude while controlling the order, and (3) the
+interaction between order and magnitude. Our results indicate a
+significant order effect—later visuomotor asynchrony decreased the
+rating of body-ownership judgments more—but no convergent evidence on
+magnitude. We discuss how body-ownership judgments may be formed
+sensorily or affectively.</p>
+</div>
+</div>
+<div id="physical-spaces" class="section level2">
+<h2>Physical Spaces</h2>
+<div
+id="understanding-interaction-and-breakouts-of-safety-boundaries-in-virtual-reality-through-mixed-method-studies"
+class="section level3">
+<h3>Understanding Interaction and Breakouts of Safety Boundaries in
+Virtual Reality Through Mixed-Method Studies</h3>
+<p><img src="assets/img/breakout.png" border-radius="10px,"
+width="150" /></p>
+<p>Virtual Reality (VR) technologies become ubiquitous, allowing people
+to employ immersive experiences in their homes. Since VR participants
+are visually disconnected from their real-world environment, commercial
+products propose safety boundaries to prevent colliding with their
+surroundings. However, there is a lack of empirical knowledge on how
+people perceive and interact with safety boundaries in everyday VR
+usage. This paper investigates this research gap with two mixed-method
+empirical studies. Study 1 reports an online survey (n=48) collecting
+data about attitudes towards safety boundaries, behavior while
+interacting with them, and reasons for breakout. Our analysis with open
+coding reveals that some VR participants ignored safety boundaries
+intentionally, even breaking out of them and continuing their actions.
+Study 2 investigates how and why VR participants intentionally break out
+when interacting close to safety boundaries and obstacles by replicating
+breakouts in a lab study (n=12). Our interview and breakout data
+discover three strategies, revealing VR participants sometimes break out
+of boundaries based on their real-world spatial information. Finally, we
+discuss improving future VR safety mechanisms by supporting
+participants’ real-world spatial mental models using landmarks.</p>
+<p><a
+href="https://ieeexplore.ieee.org/abstract/document/10494194"><svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M96 0C43 0 0 43 0 96V416c0 53 43 96 96 96H384h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V384c17.7 0 32-14.3 32-32V32c0-17.7-14.3-32-32-32H384 96zm0 384H352v64H96c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16zm16 48H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/></svg>
+IEEE VR ’24</a></p>
+</div>
+<div
+id="fingermapper-mapping-finger-motions-onto-virtual-arms-to-enable-safe-virtual-reality-interaction-in-confined-spaces"
+class="section level3">
+<h3>FingerMapper: Mapping Finger Motions onto Virtual Arms to Enable
+Safe Virtual Reality Interaction in Confined Spaces</h3>
+<p><img src="assets/img/fm.png" border-radius="10px," width="150" /></p>
+<p>Whole-body movements enhance the presence and enjoyment of Virtual
+Reality (VR) experiences. However, using large gestures is often
+uncomfortable and impossible in confined spaces (e.g., public
+transport). We introduce FingerMapper, mapping small-scale finger
+motions onto virtual arms and hands to enable whole-body virtual
+movements in VR. In a first target selection study (n=13) comparing
+FingerMapper to hand tracking and ray-casting, we found that
+FingerMapper can significantly reduce physical motions and fatigue while
+having a similar degree of precision. In a consecutive study (n=13), we
+compared FingerMapper to hand tracking inside a confined space (the
+front passenger seat of a car). The results showed participants had
+significantly higher perceived safety and fewer collisions with
+FingerMapper while preserving a similar degree of presence and enjoyment
+as hand tracking. Finally, we present three example applications
+demonstrating how FingerMapper could be applied for locomotion and
+interaction for VR in confined spaces.</p>
+<p><a
+href="https://dl.acm.org/doi/abs/10.1145/3544548.3580736"><svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M96 0C43 0 0 43 0 96V416c0 53 43 96 96 96H384h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V384c17.7 0 32-14.3 32-32V32c0-17.7-14.3-32-32-32H384 96zm0 384H352v64H96c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16zm16 48H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/></svg>
+CHI ’23</a> <a
+href="https://www.youtube.com/watch?v=E4x1Aw_meiw"><svg aria-hidden="true" role="img" viewBox="0 0 576 512" style="height:1em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg>
+Video</a></p>
+</div>
+<div id="perceptual-manipulations" class="section level3">
+<h3>Perceptual Manipulations</h3>
+<p><img src="assets/img/vppm.jpg" border-radius="10px,"
+width="150" /></p>
+<p>“Virtual-Physical Perceptual Manipulations” (VPPMs) such as
+redirected walking and haptics expand the user’s capacity to interact
+with Virtual Reality (VR) beyond what would ordinarily physically be
+possible. VPPMs leverage knowledge of the limits of human perception to
+effect changes in the user’s physical movements, becoming able to
+(perceptibly and imperceptibly) nudge their physical actions to enhance
+interactivity in VR. We explore the risks posed by the malicious use of
+VPPMs. First, we define, conceptualize and demonstrate the existence of
+VPPMs. Next, using speculative design workshops, we explore and
+characterize the threats/risks posed, proposing mitigations and
+preventative recommendations against the malicious use of VPPMs.
+Finally, we implement two sample applications to demonstrate how
+existing VPPMs could be trivially subverted to create the potential for
+physical harm. This paper aims to raise awareness that the current way
+we apply and publish VPPMs can lead to malicious exploits of our
+perceptual vulnerabilities.</p>
+<p><a
+href="https://dl.acm.org/doi/abs/10.1145/3491102.3517728"><svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M96 0C43 0 0 43 0 96V416c0 53 43 96 96 96H384h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V384c17.7 0 32-14.3 32-32V32c0-17.7-14.3-32-32-32H384 96zm0 384H352v64H96c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16zm16 48H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/></svg>
+CHI ’22</a> <a
+href="https://www.youtube.com/watch?v=uJRCchb_kAI"><svg aria-hidden="true" role="img" viewBox="0 0 576 512" style="height:1em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg>
+Video</a></p>
 <!-- - [Measurements in XR](p-measurements-in-xr.html) -->
-<ul>
-<li><a href="p-phd-thesis.html">Dissertation: Investigating Spatial
-Conflicts in VR</a></li>
-<li><a href="p-hmdplus.html">Enabling Haptic Feedback on VR
-Headsets</a></li>
-</ul>
+<!-- - [Dissertation: Investigating Spatial Conflicts in VR](p-phd-thesis.html) -->
+<!-- - [Enabling Haptic Feedback on VR Headsets](p-hmdplus.html) -->
+</div>
+</div>
+</div>
 
 &nbsp;
 
@@ -330,6 +608,8 @@ Headsets</a></li>
 &nbsp;
 
 
+</div>
+</div>
 
 </div>
 
@@ -362,6 +642,35 @@ $(document).ready(function () {
 
 <!-- code folding -->
 
+<script>
+$(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>

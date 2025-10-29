@@ -1,6 +1,6 @@
 ---
 title: "HMD+"
-subtitle: Exploring Haptic Feedback on VR Head-Mounted Displays
+subtitle: Enabling Haptic Feedback on VR Head-Mounted Displays
 output:
   html_document:
     toc: true

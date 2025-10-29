@@ -1,8 +1,21 @@
 ---
 title: "Research"
 output: html_document
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    collapsed: false
+    number_sections: false
+    toc_depth: 3
 ---
 
+```{r load_packages, message=FALSE, warning=FALSE, include=FALSE} 
+library(fontawesome)
+```
+
+
+
 <!-- - [Measurements in XR](p-measurements-in-xr.html) -->
-- [Dissertation: Spatial Conflicts in VR](p-phd-thesis.html)
-- [Haptic Feedback on VR Headsets](p-hmdplus.html)
+<!-- - [Dissertation: Investigating Spatial Conflicts in VR](p-phd-thesis.html) -->
+<!-- - [Enabling Haptic Feedback on VR Headsets](p-hmdplus.html) -->

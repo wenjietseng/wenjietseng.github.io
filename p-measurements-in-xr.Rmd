@@ -10,3 +10,15 @@ output:
     #code_folding: hide
 ---
 
+# Why measurement is important in XR
+
+# What to measure
+
+# How to measure
+
+# Who to measure
+
+# Where
+
+# When
+

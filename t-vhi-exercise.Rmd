@@ -1,0 +1,49 @@
+---
+title: "Exercise: Hand Redirection in VR"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    collapsed: false
+    number_sections: false
+    toc_depth: 2
+---
+
+# Prerequisite
+
+You can follow this guide to set up your environment for developing VR
+
+## Hardware
+
+- 2-3 students share one Quest.
+- USB 3 cable
+- The Quest should be in developer mode. 
+
+## Software
+
+- [Unity 2022.3 LTS (2022.3.62f2)](https://unity.com/download)
+  - Install **Android Build Support**
+  - We often need to download and manage packages/libraries (for example, Meta SDK for developing Quest). To make our life easier in this exercise, please use [this link]().
+- [SideQuest](https://sidequestvr.com/) allows you to install your apk to the Quest.
+- [Meta Quest link](https://developers.meta.com/horizon/documentation/unity/unity-link/): If you use the Windows computer with a good graphic card, you can consider setup the Quest link to make the VR development on Unity easier.
+
+# Exercises
+
+## Warm-up
+
+1. Build the apk to your Quest, or set up the Meta Quest link.
+2. Calibrate the scene (in which script?)
+
+## Basic
+
+3. Modify the code to develop hand redirection in different axes ($X$, $Y$, and $Z$)?
+4. Control one direction, decrease and increase the discrepancy. What did you observe?
+5. Find the parameter that controls the discrepancy between the virtual and the physical hand. Play with this parameter and discuss your observation.
+6. Now fix the discrepancy and compare hand redirection in three axes and discuss which direction is easier to detect.
+7. Find the code for recording data (or implement it by yourself). Do several trials and record your data. Plot (and fit) the psychometric function. Discuss and interpret your data with your teammates.
+
+## Open-ended
+
+8. Instead of offsetting the virtual hand position, we can also achieve redirection by rotating the environment. First discuss how this approach could work and try to implement it.
+9. Instead of using controllers, try to develop the implementation with hand tracking.
+10. Instead of reaching to the sphere floating in mid-air, try to use a real physical object. What are the challenges?

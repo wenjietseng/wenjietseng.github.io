@@ -3,6 +3,8 @@ title: "Developing basic VR interaction using Unity"
 output: html_document
 ---
 
+These are the materials I created for the VR class during my PhD studies.
+
 - [Intro to Unity (Roll-a-ball)](assets/pdf/vr-unity/2-intro-unity.pdf) 
 - [Unity + VR](assets/pdf/vr-unity/3-roll-a-ball-vr.pdf)
   - [Demo video](https://youtu.be/K0V2QeYnaZQ)

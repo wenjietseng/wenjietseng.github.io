@@ -11,7 +11,7 @@
 
 
 
-<title>Developing basic VR interaction using Unity</title>
+<title>Exercise: Hand Redirection in VR</title>
 
 <script src="site_libs/header-attrs-2.29/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -29,6 +29,9 @@
        h6 {font-size: 12px;}
        code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
        pre:not([class]) { background-color: white }</style>
+<script src="site_libs/jqueryui-1.13.2/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
@@ -224,6 +227,69 @@ $(document).ready(function () {
 
 
 
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
 
 </head>
 
@@ -231,6 +297,16 @@ $(document).ready(function () {
 
 
 <div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
 
 
 
@@ -300,30 +376,85 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Developing basic VR interaction using
-Unity</h1>
+<h1 class="title toc-ignore">Exercise: Hand Redirection in VR</h1>
 
 </div>
 
 
-<p>These are the materials I created for the VR class during my PhD
-studies.</p>
+<div id="prerequisite" class="section level1">
+<h1>Prerequisite</h1>
+<p>You can follow this guide to set up your environment for developing
+VR</p>
+<div id="hardware" class="section level2">
+<h2>Hardware</h2>
 <ul>
-<li><a href="assets/pdf/vr-unity/2-intro-unity.pdf">Intro to Unity
-(Roll-a-ball)</a></li>
-<li><a href="assets/pdf/vr-unity/3-roll-a-ball-vr.pdf">Unity + VR</a>
-<ul>
-<li><a href="https://youtu.be/K0V2QeYnaZQ">Demo video</a></li>
-</ul></li>
-<li><a href="assets/pdf/vr-unity/4-parkour.pdf">VR Parkour Challenge:
-Locomotion and Interaction.</a>
-<ul>
-<li><a
-href="https://github.com/wenjietseng/VR-locomotion-parkour">GitHub
-repo</a></li>
-<li><a href="https://youtu.be/5s-vTwTFc7U">Demo video</a></li>
-</ul></li>
+<li>2-3 students share one Quest.</li>
+<li>USB 3 cable</li>
+<li>The Quest should be in developer mode.</li>
 </ul>
+</div>
+<div id="software" class="section level2">
+<h2>Software</h2>
+<ul>
+<li><a href="https://unity.com/download">Unity 2022.3 LTS
+(2022.3.62f2)</a>
+<ul>
+<li>Install <strong>Android Build Support</strong></li>
+<li>We often need to download and manage packages/libraries (for
+example, Meta SDK for developing Quest). To make our life easier in this
+exercise, please use <a href="">this link</a>.</li>
+</ul></li>
+<li><a href="https://sidequestvr.com/">SideQuest</a> allows you to
+install your apk to the Quest.</li>
+<li><a
+href="https://developers.meta.com/horizon/documentation/unity/unity-link/">Meta
+Quest link</a>: If you use the Windows computer with a good graphic
+card, you can consider setup the Quest link to make the VR development
+on Unity easier.</li>
+</ul>
+</div>
+</div>
+<div id="exercises" class="section level1">
+<h1>Exercises</h1>
+<div id="warm-up" class="section level2">
+<h2>Warm-up</h2>
+<ol style="list-style-type: decimal">
+<li>Build the apk to your Quest, or set up the Meta Quest link.</li>
+<li>Calibrate the scene (in which script?)</li>
+</ol>
+</div>
+<div id="basic" class="section level2">
+<h2>Basic</h2>
+<ol start="3" style="list-style-type: decimal">
+<li>Modify the code to develop hand redirection in different axes (<span
+class="math inline">\(X\)</span>, <span
+class="math inline">\(Y\)</span>, and <span
+class="math inline">\(Z\)</span>)?</li>
+<li>Control one direction, decrease and increase the discrepancy. What
+did you observe?</li>
+<li>Find the parameter that controls the discrepancy between the virtual
+and the physical hand. Play with this parameter and discuss your
+observation.</li>
+<li>Now fix the discrepancy and compare hand redirection in three axes
+and discuss which direction is easier to detect.</li>
+<li>Find the code for recording data (or implement it by yourself). Do
+several trials and record your data. Plot (and fit) the psychometric
+function. Discuss and interpret your data with your teammates.</li>
+</ol>
+</div>
+<div id="open-ended" class="section level2">
+<h2>Open-ended</h2>
+<ol start="8" style="list-style-type: decimal">
+<li>Instead of offsetting the virtual hand position, we can also achieve
+redirection by rotating the environment. First discuss how this approach
+could work and try to implement it.</li>
+<li>Instead of using controllers, try to develop the implementation with
+hand tracking.</li>
+<li>Instead of reaching to the sphere floating in mid-air, try to use a
+real physical object. What are the challenges?</li>
+</ol>
+</div>
+</div>
 
 &nbsp;
 
@@ -342,6 +473,8 @@ repo</a></li>
 &nbsp;
 
 
+</div>
+</div>
 
 </div>
 
@@ -374,6 +507,35 @@ $(document).ready(function () {
 
 <!-- code folding -->
 
+<script>
+$(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>

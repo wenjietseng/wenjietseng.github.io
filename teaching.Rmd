@@ -5,3 +5,4 @@ output: html_document
 
 - [Thesis/Internship topics](t-thesis-topics.html)
 - [Developing basic VR interaction using Unity](t-vr-unity.html)
+- [Exercise Hand redirection in VR](t-vhi-exercise.html)

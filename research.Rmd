@@ -6,7 +6,7 @@ output:
     toc_float: true
     collapsed: false
     number_sections: false
-    toc_depth: 3
+    toc_depth: 2
 ---
 
 ```{r load_packages, message=FALSE, warning=FALSE, include=FALSE} 
@@ -15,16 +15,19 @@ library(fontawesome)
 
 Humans perceive and interact with their surroundings through their bodies. Our bodies allow us to touch and manipulate objects with our hands or navigate in a dark room, relying on our sense of body position. Investigating bodily experiences is central to understanding the body–mind connection and designing better human–computer interaction. Researchers use Virtual Reality (VR) to study virtual body illusions and 3D interaction. However, bodily experiences in VR still face several challenges: 1) the lack of haptic feedback; 2) the reliance on retrospective judgments, such as questionnaires, which may be prone to bias; and 3) the risk of colliding with physical objects when people are immersed in VR at home.
 
-# Current Research
 
-## Haptic Feedback
+---
+
+# Haptic Feedback in VR
 
 Haptic feedback is indispensable to everyday tasks, from tapping on a smartphone to crafting woodwork.
 Such an essential sense, however, is limited to vibrotactile feedback in most VR experiences, usually enabled by hand-held controllers.
 Although many researchers have designed haptic devices in HCI and VR, they often focus on the hands.
 We aim to enable haptic input and output through Head-Mounted Displays (HMDs) to explore haptic feedback on the face.
 
-### FacePush
+## FacePush
+
+*FacePush: Introducing Normal Force on Face with Head-Mounted Displays*
 
 ![](assets/img/facepush.png){border-radius=10px, width=150px}
 
@@ -33,7 +36,9 @@ FacePush induces haptic feedback as output on the face through a pulley system u
 [`r fa("book")` UIST '18](https://doi.org/10.1145/3242587.3242588)
 [`r fa("youtube")` Video](https://www.youtube.com/watch?v=IPLVCdbvWyI)
 
-### FaceWidgets 
+## FaceWidgets 
+
+*FaceWidgets: Exploring Tangible Interaction on Face with Head-Mounted Displays*
 
 ![](assets/img/facewidgets.JPG){border-radius=10px, width=150px}
 
@@ -42,7 +47,9 @@ We present FaceWidgets, a device integrated with the backside of a head-mounted 
 [`r fa("book")` UIST '19](https://doi.org/10.1145/3332165.3347946)
 [`r fa("youtube")` Video](https://www.youtube.com/watch?v=e_Bty05zuAc)
 
-### Skin-Stroke Display
+## Skin-Stroke Display
+
+*A Skin-Stroke Display on the Eye-Ring Through Head-Mounted Displays*
 
 ![](assets/img/skin-stroke2.jpg){border-radius=10px, width=150px}
 
@@ -51,9 +58,13 @@ We present the Skin-Stroke Display, a system mounted on the lens inside the head
 [`r fa("book")` CHI '20](https://dl.acm.org/doi/abs/10.1145/3313831.3376700)
 [`r fa("youtube")` Video](https://www.youtube.com/watch?v=zB_UXC9lZF0)
 
-## Evaluation
+---
 
-### Does the Peak-End Rule Apply to Judgments of Body Ownership in Virtual Reality?
+# Evaluation
+
+## The Peak-End Rule and Body Ownership
+
+*Does the Peak-End Rule Apply to Judgments of Body Ownership in Virtual Reality?*
 
 While body ownership is central to research in virtual reality (VR), it remains unclear how experiencing an avatar over time shapes a person's summary judgment of it. Such a judgment could be a simple average of the bodily experience, or it could follow the peak-end rule, which suggests that people's retrospective judgment correlates with the most intense and recent moments in their experiencing. We systematically manipulate body ownership over a three-minute avatar embodiment using visuomotor asynchrony. Asynchrony here serves to negatively influence body ownership.
 We conducted one lab study ($N=28$) and two online studies (pilot: $N=97$ and formal: $N=128$)
@@ -63,9 +74,13 @@ Our results indicate a significant order effect---later visuomotor asynchrony de
 [`r fa("book")` IJHCS '25 (in press)]()
 [`r fa("database")` OSF Repository](https://osf.io/8b4aw/overview)
 
-## Physical Spaces
+---
 
-### Understanding Interaction and Breakouts of Safety Boundaries in Virtual Reality Through Mixed-Method Studies
+# Physical Spaces
+
+## Breakouts
+
+*Understanding Interaction and Breakouts of Safety Boundaries in Virtual Reality Through Mixed-Method Studies*
 
 ![](assets/img/breakout.png){border-radius=10px, width=150px}
 
@@ -73,7 +88,9 @@ Virtual Reality (VR) technologies become ubiquitous, allowing people to employ i
 
 [`r fa("book")` IEEE VR '24](https://ieeexplore.ieee.org/abstract/document/10494194)
 
-### FingerMapper: Mapping Finger Motions onto Virtual Arms to Enable Safe Virtual Reality Interaction in Confined Spaces
+## FingerMapper
+
+*FingerMapper: Mapping Finger Motions onto Virtual Arms to Enable Safe Virtual Reality Interaction in Confined Spaces*
 
 ![](assets/img/fm.png){border-radius=10px, width=150px}
 
@@ -82,7 +99,9 @@ Whole-body movements enhance the presence and enjoyment of Virtual Reality (VR) 
 [`r fa("book")` CHI '23](https://dl.acm.org/doi/abs/10.1145/3544548.3580736)
 [`r fa("youtube")` Video](https://www.youtube.com/watch?v=E4x1Aw_meiw)
 
-### Perceptual Manipulations
+## Perceptual Manipulations
+
+*The Darkside of Perceptual Manipulations*
 
 ![](assets/img/vppm.jpg){border-radius=10px, width=150px}
 
@@ -90,6 +109,15 @@ Whole-body movements enhance the presence and enjoyment of Virtual Reality (VR) 
 
 [`r fa("book")` CHI '22](https://dl.acm.org/doi/abs/10.1145/3491102.3517728)
 [`r fa("youtube")` Video](https://www.youtube.com/watch?v=uJRCchb_kAI)
+
+## SSPXR Workshop
+
+*Novel Challenges of Safety, Security and Privacy in Extended Reality*
+
+Extended Reality (AR/VR/MR) technology is becoming increasingly affordable and capable, becoming ever more interwoven with everyday life. HCI research has focused largely on innovation around XR technology, exploring new use cases and interaction techniques, understanding how this technology is used and appropriated etc. However, equally important is the investigation and consideration of risks posed by such advances, specifically in contributing to new vulnerabilities and attack vectors with regards to security, safety, and privacy that are unique to XR. For example perceptual manipulations in VR, such as redirected walking or haptic retargeting, have been developed to enhance interaction, yet subversive use of such techniques has been demonstrated to unlock new harms, such as redirecting the VR user into a collision. This workshop will convene researchers focused on HCI, XR, Safety, Security, and Privacy, with the intention of exploring safety, privacy, and security challenges of XR technology. With an HCI lens, workshop participants will engage in critical assessment of emerging XR technologies and develop an XR research agenda that integrates research on interaction technologies and techniques with safety, security and privacy research.
+
+[`r fa("book")` CHI Workshop '22](https://dl.acm.org/doi/abs/10.1145/3491101.3503741)
+[`r fa("globe")` Workshop webpage '22](https://wenjietseng.github.io/sspxr/)
 
 <!-- - [Measurements in XR](p-measurements-in-xr.html) -->
 <!-- - [Dissertation: Investigating Spatial Conflicts in VR](p-phd-thesis.html) -->

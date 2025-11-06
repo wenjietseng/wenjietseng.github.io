@@ -383,21 +383,21 @@ div.tocify {
 
 <div id="prerequisite" class="section level1">
 <h1>Prerequisite</h1>
-<p>You can follow this guide to set up your environment for developing
-VR</p>
+<p>Please follow this guide to set up your environment for developing
+VR.</p>
 <div id="hardware" class="section level2">
 <h2>Hardware</h2>
 <ul>
 <li>2-3 students share one Quest.</li>
-<li>USB 3 cable</li>
+<li>USB 3 cable (for building the apk from Unity directly to the
+headset)</li>
 <li>The Quest should be in developer mode.</li>
 </ul>
 </div>
 <div id="software" class="section level2">
 <h2>Software</h2>
 <ul>
-<li><a href="https://unity.com/download">Unity 2022.3 LTS
-(2022.3.62f2)</a>
+<li><a href="https://unity.com/download">Unity 2022.3 LTS</a>
 <ul>
 <li>Install <strong>Android Build Support</strong></li>
 <li>We often need to download and manage packages/libraries (for
@@ -405,12 +405,17 @@ example, Meta SDK for developing Quest). To make our life easier in this
 exercise, please use <a href="">this link</a>.</li>
 </ul></li>
 <li><a href="https://sidequestvr.com/">SideQuest</a> allows you to
-install your apk to the Quest.</li>
+install your apk to the Quest. SideQuest also provides a real-time
+view.</li>
 <li><a
 href="https://developers.meta.com/horizon/documentation/unity/unity-link/">Meta
 Quest link</a>: If you use the Windows computer with a good graphic
 card, you can consider setup the Quest link to make the VR development
 on Unity easier.</li>
+<li><a
+href="https://developers.meta.com/horizon/documentation/unity/xrsim-getting-started">Meta
+Quest XR Simulator</a>: This is a new tool provided by Meta. I haven’t
+tried but perhaps it’s worth a shot?</li>
 </ul>
 </div>
 </div>
@@ -419,15 +424,26 @@ on Unity easier.</li>
 <div id="warm-up" class="section level2">
 <h2>Warm-up</h2>
 <ol style="list-style-type: decimal">
-<li>Build the apk to your Quest, or set up the Meta Quest link.</li>
-<li>Calibrate the scene (in which script?)</li>
+<li>Build the apk to your Quest. If you have a powerful Windows
+computer, you could try to set up the Meta Quest link.</li>
+<li>Once enter the VR scene, the first step is often to calibrate the
+virtual and physical environments. Find the script and check how to
+calibrate. If you are interested, you can look into
+<code>calib2()</code> and
+<code>CalibrationTool.CalibrateFromTag()</code> functions to see what is
+the difference. Discuss with you teammates.</li>
 </ol>
 </div>
 <div id="basic" class="section level2">
 <h2>Basic</h2>
+<p>After the calibration, you should see a panel with multiple variables
+that you can interact with raycasting and button click. You can change
+the parameters and click start - this will trigger one trial. Play
+around with all the variables and then continue to the following
+tasks.</p>
 <ol start="3" style="list-style-type: decimal">
-<li>Modify the code to develop hand redirection in different axes (<span
-class="math inline">\(X\)</span>, <span
+<li>Try to Modify the code to develop hand redirection in different axes
+(<span class="math inline">\(X\)</span>, <span
 class="math inline">\(Y\)</span>, and <span
 class="math inline">\(Z\)</span>)?</li>
 <li>Control one direction, decrease and increase the discrepancy. What
@@ -437,6 +453,8 @@ and the physical hand. Play with this parameter and discuss your
 observation.</li>
 <li>Now fix the discrepancy and compare hand redirection in three axes
 and discuss which direction is easier to detect.</li>
+<li>Can you make this into a block? Repeating multiple times with
+randomized offset.</li>
 <li>Find the code for recording data (or implement it by yourself). Do
 several trials and record your data. Plot (and fit) the psychometric
 function. Discuss and interpret your data with your teammates.</li>
@@ -447,9 +465,9 @@ function. Discuss and interpret your data with your teammates.</li>
 <ol start="8" style="list-style-type: decimal">
 <li>Instead of offsetting the virtual hand position, we can also achieve
 redirection by rotating the environment. First discuss how this approach
-could work and try to implement it.</li>
-<li>Instead of using controllers, try to develop the implementation with
-hand tracking.</li>
+could work and then implement it.</li>
+<li>Instead of using controllers, develop the implementation with hand
+tracking.</li>
 <li>Instead of reaching to the sphere floating in mid-air, try to use a
 real physical object. What are the challenges?</li>
 </ol>

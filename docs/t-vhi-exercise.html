@@ -388,8 +388,10 @@ exercise.</p>
 <div id="hardware" class="section level2">
 <h2>Hardware</h2>
 <ul>
-<li>3 students share one Quest (we have at least 8 headsets)</li>
-<li>USB C cable (for building the apk or Quest link)</li>
+<li>3 students share one Quest (we have at least 8 headsets). It would
+be great if you can make sure your team also shares one powerful Windows
+computer.</li>
+<li>USB C cable (for the Quest link or building the apk)</li>
 <li>The Quest should already be in developer mode (<a
 href="https://developers.meta.com/horizon/documentation/unity/unity-env-device-setup">Tutorial</a>)</li>
 <li>We prepare some batteries in case you need them.</li>
@@ -403,27 +405,43 @@ href="https://developers.meta.com/horizon/documentation/unity/unity-project-setu
 up Unity for VR development</a>: This page explains the compatibility of
 two XR plugins, Oculus XR (legacy) and Unity Open XR (future).</li>
 <li>For this tutorial, we use <a href="https://unity.com/download">Unity
-2020.3 LTS</a> because our project is based on an older version of
-Oculus XR plugin.
+<strong>2020.3</strong> LTS</a> because our project is based on an older
+version of Oculus XR plugin.
 <ul>
-<li>Please install <strong>Android Build Support</strong></li>
 <li>We often need to download and manage packages/libraries (for
 example, Meta SDK for developing Quest). To make our life easier in this
 exercise, please use <a href="">this link</a>.</li>
+<li>Please also install <strong>Android Build Support</strong> for your
+Unity</li>
 </ul></li>
-<li><a href="https://sidequestvr.com/">SideQuest</a> allows you to
-install your apk to the Quest. SideQuest also provides broadcast view
-while using VR.</li>
 <li><a
 href="https://developers.meta.com/horizon/documentation/unity/unity-link/">Meta
 Quest link</a>: If you use a Windows computer with a good graphic card,
-you can set up the Quest link to make the VR development on Unity
-easier.</li>
+you can set up the Quest link to make the VR development on Unity easier
+(highly recommended).</li>
+<li>Building apk approach: it’s a painful path to take. Please find
+someone who can setup Quest link…</li>
+<li><a href="https://sidequestvr.com/">SideQuest</a> allows you to
+install your apk to the Quest. SideQuest also provides broadcast view
+while using VR.</li>
 <li><a
 href="https://developers.meta.com/horizon/documentation/unity/xrsim-getting-started">Meta
 Quest XR Simulator</a>: This is a new tool provided by Meta. I haven’t
 tried but perhaps it’s worth a shot for non-Windows users.</li>
 </ul>
+</div>
+<div id="demo-video" class="section level2">
+<h2>Demo video</h2>
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/R9r0cTbWFi4?si=GKqsOOHw-woYNH7W" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+</iframe>
+</center>
+<p>I already mapped four functions in “XXX” script. On the left
+controller, Button X is for calibration, and the joystick is for
+changing <span class="math inline">\(\theta\)</span> (the angular
+difference between the virtual and real hands). On the right controller,
+Button B is to show the real hand, and Button A is to start one
+trial.</p>
 </div>
 </div>
 <div id="problems" class="section level1">
@@ -434,11 +452,11 @@ tried but perhaps it’s worth a shot for non-Windows users.</li>
 <li>Run the project on Unity:</li>
 </ol>
 <ul>
-<li>Build the apk to your Quest (<a
-href="https://developers.meta.com/horizon/documentation/unity/unity-project-configuration">Tutorial</a>)</li>
 <li>If you have a powerful Windows computer, you could set up the <a
 href="https://developers.meta.com/horizon/documentation/unity/unity-link/">Meta
 Quest link</a>.</li>
+<li>Build the apk to your Quest (<a
+href="https://developers.meta.com/horizon/documentation/unity/unity-project-configuration">Tutorial</a>)</li>
 </ul>
 <ol start="2" style="list-style-type: decimal">
 <li>Calibration: We often calibrate the virtual scene with the physical
@@ -455,39 +473,46 @@ href="https://developers.meta.com/horizon/documentation/unity/unity-ovrinput/">T
 </div>
 <div id="basic" class="section level2">
 <h2>Basic</h2>
-<p>After the calibration, you should see a panel with multiple variables
-that you can interact with raycasting and button click on your right
-controller. You can change the parameters and click start - this will
-trigger one trial.</p>
-<p>(a small gif here or pictures)</p>
 <ol start="4" style="list-style-type: decimal">
-<li>Let’s play around with the variables. Find the parameter that
-controls the discrepancy between the virtual and the physical hand.
-Decrease and increase the offset (symbol) between your virtual and real
-hand. Discuss the difference you observe with your teammates.</li>
+<li>Let’s play around with <span class="math inline">\(\theta\)</span>
+by decreasing and increasing the angular difference between your virtual
+and real hand. Discuss the difference that you observe with your
+teammates.</li>
 <li>Design hand redirection in a different axis. We can manipulate the
 offset from <span class="math inline">\(X\)</span>, <span
 class="math inline">\(Y\)</span>, and <span
 class="math inline">\(Z\)</span>. First discuss with your teammate about
 how to implement each of them. Next, pick one axis to implement it.</li>
 <li>Now fix the offset and compare hand redirection in different axes
-and discuss which direction is easier to detect.</li>
-<li>Make this setup into a block - repeating multiple times with
-randomized offset.</li>
-<li>Implement the code for recording data. Plot the psychometric
-function. Discuss and interpret your data with your teammates.</li>
+and discuss which direction is easier to detect. 6.1. You can also fix
+the offset and play around with the gain functions.</li>
+<li>Make this setup into a block - repeating 10 times with randomized
+offset. By repeating several blocks, you would collect data for drawing
+a psychometric function.</li>
+<li>Implement the code to record data (the answer and <span
+class="math inline">\(\theta\)</span> of each trial). Plot the
+psychometric function and discuss with your teammates.</li>
+<li>Record the trajectory of physical hand in each trial. Plot the data
+and discuss with your teammates</li>
 </ol>
 </div>
 <div id="open-ended" class="section level2">
 <h2>Open-ended</h2>
-<ol start="9" style="list-style-type: decimal">
-<li>Instead of using controllers, develop the implementation with hand
+<p>For these problems, there is no simple and quick answers. Please
+first discuss with your teammates about how to solve the problem before
+implement it.</p>
+<ol start="10" style="list-style-type: decimal">
+<li>Imagine there are multiple virtual targets. The system does not know
+in advance which object the participant will touch. How can the system
+adapt accordingly?</li>
+<li>Instead of using controllers, adapt this implementation to hand
 tracking.</li>
-<li>Instead of reaching to the sphere floating in mid-air, try to use a
-real physical object. What are the challenges?</li>
-<li>Instead of offsetting the virtual hand position, we can also achieve
-redirection by rotating the environment. First discuss how this approach
-could work and then implement it.</li>
+<li>Instead of reaching the virtual sphere floating in mid-air, use a
+real physical object. What are the challenges? Hint: this requires
+calibration.</li>
+<li>Instead of offsetting the virtual hand position using <span
+class="math inline">\(\theta\)</span>, achieve hand redirection by
+rotating the virtual environment.</li>
 </ol>
 </div>
 </div>

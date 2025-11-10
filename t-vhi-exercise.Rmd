@@ -15,45 +15,53 @@ By following this tutorial, you can set up the Unity project for the exercise.
 
 ## Hardware
 
-- 3 students share one Quest (we have at least 8 headsets)
-- USB C cable (for building the apk or Quest link)
+- 3 students share one Quest (we have at least 8 headsets). It would be great if you can make sure your team also shares one powerful Windows computer.
+- USB C cable (for the Quest link or building the apk)
 - The Quest should already be in developer mode ([Tutorial](https://developers.meta.com/horizon/documentation/unity/unity-env-device-setup))
 - We prepare some batteries in case you need them.
 
 ## Software
 
 - [Set up Unity for VR development](https://developers.meta.com/horizon/documentation/unity/unity-project-setup): This page explains the compatibility of two XR plugins, Oculus XR (legacy) and Unity Open XR (future).
-- For this tutorial, we use [Unity 2020.3 LTS](https://unity.com/download) because our project is based on an older version of Oculus XR plugin.
-  - Please install **Android Build Support**
+- For this tutorial, we use [Unity **2020.3** LTS](https://unity.com/download) because our project is based on an older version of Oculus XR plugin.
   - We often need to download and manage packages/libraries (for example, Meta SDK for developing Quest). To make our life easier in this exercise, please use [this link]().
+  - Please also install **Android Build Support** for your Unity
+- [Meta Quest link](https://developers.meta.com/horizon/documentation/unity/unity-link/): If you use a Windows computer with a good graphic card, you can set up the Quest link to make the VR development on Unity easier (highly recommended).
+- Building apk approach: it's a painful path to take. Please find someone who can setup Quest link...
 - [SideQuest](https://sidequestvr.com/) allows you to install your apk to the Quest. SideQuest also provides broadcast view while using VR.
-- [Meta Quest link](https://developers.meta.com/horizon/documentation/unity/unity-link/): If you use a Windows computer with a good graphic card, you can set up the Quest link to make the VR development on Unity easier.
 - [Meta Quest XR Simulator](https://developers.meta.com/horizon/documentation/unity/xrsim-getting-started): This is a new tool provided by Meta. I haven't tried but perhaps it's worth a shot for non-Windows users.
+
+## Demo video
+
+<center><iframe width="560" height="315" src="https://www.youtube.com/embed/R9r0cTbWFi4?si=GKqsOOHw-woYNH7W" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></center>
+
+I already mapped four functions in "XXX" script. On the left controller, Button X is for calibration, and the joystick is for changing $\theta$ (the angular difference between the virtual and real hands). On the right controller, Button B is to show the real hand, and Button A is to start one trial. 
 
 # Problems
 
 ## Warm-up
 
 1. Run the project on Unity:
-  - Build the apk to your Quest ([Tutorial](https://developers.meta.com/horizon/documentation/unity/unity-project-configuration))
   - If you have a powerful Windows computer, you could set up the [Meta Quest link](https://developers.meta.com/horizon/documentation/unity/unity-link/).
+  - Build the apk to your Quest ([Tutorial](https://developers.meta.com/horizon/documentation/unity/unity-project-configuration))
 2. Calibration: We often calibrate the virtual scene with the physical environment when using VR, especially when we need to align two spaces (not in this exercise though). Find the script and check how to calibrate. If you are interested, you can look into `calib2()` and `CalibrationTool.CalibrateFromTag()` functions to see what is the difference. Discuss with you teammates.
 3. Assign the calibration to another input mapping on the left controller ([Tutorial](https://developers.meta.com/horizon/documentation/unity/unity-ovrinput/))
 
 ## Basic
 
-After the calibration, you should see a panel with multiple variables that you can interact with raycasting and button click on your right controller. You can change the parameters and click start - this will trigger one trial. 
-
-(a small gif here or pictures)
-
-4. Let's play around with the variables. Find the parameter that controls the discrepancy between the virtual and the physical hand. Decrease and increase the offset (symbol) between your virtual and real hand. Discuss the difference you observe with your teammates.
+4. Let's play around with $\theta$ by decreasing and increasing the angular difference between your virtual and real hand. Discuss the difference that you observe with your teammates.
 5. Design hand redirection in a different axis. We can manipulate the offset from $X$, $Y$, and $Z$. First discuss with your teammate about how to implement each of them. Next, pick one axis to implement it.
 6. Now fix the offset and compare hand redirection in different axes and discuss which direction is easier to detect.
-7. Make this setup into a block - repeating multiple times with randomized offset.
-8. Implement the code for recording data. Plot the psychometric function. Discuss and interpret your data with your teammates.
+6.1. You can also fix the offset and play around with the gain functions.
+7. Make this setup into a block - repeating 10 times with randomized offset. By repeating several blocks, you would collect data for drawing a psychometric function.
+8. Implement the code to record data (the answer and $\theta$ of each trial). Plot the psychometric function and discuss with your teammates.
+9. Record the trajectory of physical hand in each trial. Plot the data and discuss with your teammates
 
 ## Open-ended
 
-9. Instead of using controllers, develop the implementation with hand tracking.
-10. Instead of reaching to the sphere floating in mid-air, try to use a real physical object. What are the challenges?
-11. Instead of offsetting the virtual hand position, we can also achieve redirection by rotating the environment. First discuss how this approach could work and then implement it.
+For these problems, there is no simple and quick answers. Please first discuss with your teammates about how to solve the problem before implement it.
+
+10. Imagine there are multiple virtual targets. The system does not know in advance which object the participant will touch. How can the system adapt accordingly?
+11. Instead of using controllers, adapt this implementation to hand tracking.
+12. Instead of reaching the virtual sphere floating in mid-air, use a real physical object. What are the challenges? Hint: this requires calibration. 
+13. Instead of offsetting the virtual hand position using $\theta$, achieve hand redirection by rotating the virtual environment.

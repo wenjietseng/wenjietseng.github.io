@@ -381,6 +381,9 @@ div.tocify {
 </div>
 
 
+<p>This exercise is for the class, Haptic and Applications (17.11.2025),
+in IA pour l’ADAPTation d’environnements multimodaux (UM5IN258 - S1-25)
+at Sorbonne Université.</p>
 <div id="prerequisite" class="section level1">
 <h1>Prerequisite</h1>
 <p>By following this tutorial, you can set up the Unity project for the
@@ -445,12 +448,12 @@ tried but perhaps it’s worth a shot for non-Windows users.</li>
 </center>
 <p>I added some VR controller input in
 <code>ExperimentRedirectionHand.cs</code> and
-<code>CakuvratuibIbStart.cs</code> (see <code>Update()</code> in both
+<code>CalibrationOnStart.cs</code> (see <code>Update()</code> in both
 scripts). On the left controller, Button X is for calibration, and the
-joystick is for changing <span class="math inline">\(\theta\)</span>
+joystick is for adjusting <span class="math inline">\(\theta\)</span>
 (the angular difference between the virtual and real hands). On the
-right controller, Button B is to show the real hand, and Button A is to
-start one trial.</p>
+right controller, Button B is for showing the real hand, and Button A is
+for starting one trial.</p>
 </div>
 </div>
 <div id="problems" class="section level1">
@@ -464,9 +467,8 @@ start one trial.</p>
 <li>If you have a powerful Windows computer, you could set up the <a
 href="https://developers.meta.com/horizon/documentation/unity/unity-link/">Meta
 Quest link</a>.</li>
-<li>(optional) Build the apk to your Quest (<a
-href="https://developers.meta.com/horizon/documentation/unity/unity-project-configuration">Tutorial</a>)</li>
 </ul>
+<p><!-- - (optional) Build the apk to your Quest ([Tutorial](https://developers.meta.com/horizon/documentation/unity/unity-project-configuration)) --></p>
 <ol start="2" style="list-style-type: decimal">
 <li>Calibration: We often calibrate the virtual scene with the physical
 environment when using VR, especially when we need to align two spaces
@@ -486,8 +488,8 @@ teammates.</li>
 </div>
 <div id="basic" class="section level2">
 <h2>Basic</h2>
-<p>You can read all the problems and decide which one you want to do.
-There is no order for these problems.</p>
+<p>Please read all the problems and decide which one you want to do. The
+order is arbitrary.</p>
 <ol start="5" style="list-style-type: decimal">
 <li>We can manipulate the offset from <span
 class="math inline">\(X\)</span>, <span

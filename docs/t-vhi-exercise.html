@@ -388,39 +388,45 @@ exercise.</p>
 <div id="hardware" class="section level2">
 <h2>Hardware</h2>
 <ul>
-<li>3 students share one Quest (we have at least 8 headsets). It would
-be great if you can make sure your team also shares one powerful Windows
-computer.</li>
-<li>USB C cable (for the Quest link or building the apk)</li>
-<li>The Quest should already be in developer mode (<a
-href="https://developers.meta.com/horizon/documentation/unity/unity-env-device-setup">Tutorial</a>)</li>
-<li>We prepare some batteries in case you need them.</li>
+<li>We have at least 6 functioning Quests, so that 3-4 students share
+one. It would be great if you can make sure that your team has one
+powerful Windows computer for the Quest link.</li>
+<li>Each Quest comes with two controllers with batteries and one USB C
+cable (for the Quest link or building the apk). If your controllers run
+out of battery, we have extra ones for your to exchange.</li>
+<li>The Quests are already in developer mode. This <a
+href="https://developers.meta.com/horizon/documentation/unity/unity-env-device-setup">tutorial</a>
+is a reference about how to set up developer mode.</li>
+<li>Once the exercise ends (~17h00), please put everything in the case
+and return them to Amel.</li>
 </ul>
 </div>
 <div id="software" class="section level2">
 <h2>Software</h2>
 <ul>
-<li><a
-href="https://developers.meta.com/horizon/documentation/unity/unity-project-setup">Set
-up Unity for VR development</a>: This page explains the compatibility of
-two XR plugins, Oculus XR (legacy) and Unity Open XR (future).</li>
-<li>For this tutorial, we use <a href="https://unity.com/download">Unity
+<li>For this exercise, we use <a href="https://unity.com/download">Unity
 <strong>2020.3</strong> LTS</a> because our project is based on an older
 version of Oculus XR plugin.
 <ul>
 <li>We often need to download and manage packages/libraries (for
 example, Meta SDK for developing Quest). To make our life easier in this
-exercise, please use <a href="">this link</a>.</li>
+exercise, please use <a
+href="https://drive.google.com/file/d/1upSOI9eQInjHFAIj8nMpqvViTV-MI840/view?usp=sharing"><strong>this
+link</strong></a>.</li>
 <li>Please also install <strong>Android Build Support</strong> for your
 Unity</li>
+<li><a
+href="https://developers.meta.com/horizon/documentation/unity/unity-project-setup">Set
+up Unity for VR development</a>: This page explains the compatibility of
+two XR plugins, Oculus XR (legacy) and Unity Open XR (future).</li>
 </ul></li>
 <li><a
 href="https://developers.meta.com/horizon/documentation/unity/unity-link/">Meta
-Quest link</a>: If you use a Windows computer with a good graphic card,
-you can set up the Quest link to make the VR development on Unity easier
-(highly recommended).</li>
-<li>Building apk approach: it’s a painful path to take. Please find
-someone who can setup Quest link…</li>
+Quest link</a> (highly recommended): If you use a Windows computer with
+a good graphic card, you can set up the Quest link to make the VR
+development on Unity easier.</li>
+<li>Building apk: It’s a painful path to take. I will set up one Windows
+computer in case some of you need it.</li>
 <li><a href="https://sidequestvr.com/">SideQuest</a> allows you to
 install your apk to the Quest. SideQuest also provides broadcast view
 while using VR.</li>
@@ -436,12 +442,14 @@ tried but perhaps it’s worth a shot for non-Windows users.</li>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/R9r0cTbWFi4?si=GKqsOOHw-woYNH7W" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
 </iframe>
 </center>
-<p>I already mapped four functions in “XXX” script. On the left
-controller, Button X is for calibration, and the joystick is for
-changing <span class="math inline">\(\theta\)</span> (the angular
-difference between the virtual and real hands). On the right controller,
-Button B is to show the real hand, and Button A is to start one
-trial.</p>
+<p>I added some VR controller input in
+<code>ExperimentRedirectionHand.cs</code> and
+<code>CakuvratuibIbStart.cs</code> (see <code>Update()</code> in both
+scripts). On the left controller, Button X is for calibration, and the
+joystick is for changing <span class="math inline">\(\theta\)</span>
+(the angular difference between the virtual and real hands). On the
+right controller, Button B is to show the real hand, and Button A is to
+start one trial.</p>
 </div>
 </div>
 <div id="problems" class="section level1">
@@ -455,7 +463,7 @@ trial.</p>
 <li>If you have a powerful Windows computer, you could set up the <a
 href="https://developers.meta.com/horizon/documentation/unity/unity-link/">Meta
 Quest link</a>.</li>
-<li>Build the apk to your Quest (<a
+<li>(optional) Build the apk to your Quest (<a
 href="https://developers.meta.com/horizon/documentation/unity/unity-project-configuration">Tutorial</a>)</li>
 </ul>
 <ol start="2" style="list-style-type: decimal">
@@ -469,31 +477,36 @@ the difference. Discuss with you teammates.</li>
 <li>Assign the calibration to another input mapping on the left
 controller (<a
 href="https://developers.meta.com/horizon/documentation/unity/unity-ovrinput/">Tutorial</a>)</li>
-</ol>
-</div>
-<div id="basic" class="section level2">
-<h2>Basic</h2>
-<ol start="4" style="list-style-type: decimal">
 <li>Let’s play around with <span class="math inline">\(\theta\)</span>
 by decreasing and increasing the angular difference between your virtual
 and real hand. Discuss the difference that you observe with your
 teammates.</li>
-<li>Design hand redirection in a different axis. We can manipulate the
-offset from <span class="math inline">\(X\)</span>, <span
+</ol>
+</div>
+<div id="basic" class="section level2">
+<h2>Basic</h2>
+<p>You can read all the problems and decide which one you want to do.
+There is no order for these problems.</p>
+<ol start="5" style="list-style-type: decimal">
+<li>We can manipulate the offset from <span
+class="math inline">\(X\)</span>, <span
 class="math inline">\(Y\)</span>, and <span
-class="math inline">\(Z\)</span>. First discuss with your teammate about
-how to implement each of them. Next, pick one axis to implement it.</li>
-<li>Now fix the offset and compare hand redirection in different axes
-and discuss which direction is easier to detect. 6.1. You can also fix
-the offset and play around with the gain functions.</li>
-<li>Make this setup into a block - repeating 10 times with randomized
-offset. By repeating several blocks, you would collect data for drawing
-a psychometric function.</li>
+class="math inline">\(Z\)</span>. Design hand redirection in a different
+axis. First discuss with your teammate about how to implement each of
+them. Next, pick one axis to implement it.</li>
+<li>Fix the offset at the same value and compare hand redirection in
+different axes. Discuss which direction is easier to detect.</li>
+<li>Fix the offset at the same value and play around with the gain
+functions. Again, what are the differences?</li>
+<li>Extend the setup into a block - repeating 10 times with randomized
+offsets. By repeating several blocks, you can collect data for drawing a
+psychometric function.</li>
 <li>Implement the code to record data (the answer and <span
 class="math inline">\(\theta\)</span> of each trial). Plot the
-psychometric function and discuss with your teammates.</li>
+psychometric function and discuss what’s the difference between each
+teammate.</li>
 <li>Record the trajectory of physical hand in each trial. Plot the data
-and discuss with your teammates</li>
+and discuss the difference between each teammate.</li>
 </ol>
 </div>
 <div id="open-ended" class="section level2">
@@ -501,7 +514,7 @@ and discuss with your teammates</li>
 <p>For these problems, there is no simple and quick answers. Please
 first discuss with your teammates about how to solve the problem before
 implement it.</p>
-<ol start="10" style="list-style-type: decimal">
+<ol start="11" style="list-style-type: decimal">
 <li>Imagine there are multiple virtual targets. The system does not know
 in advance which object the participant will touch. How can the system
 adapt accordingly?</li>

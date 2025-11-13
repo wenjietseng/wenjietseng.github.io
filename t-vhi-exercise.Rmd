@@ -15,7 +15,7 @@ By following this tutorial, you can set up the Unity project for the exercise.
 
 ## Hardware
 
-- We have at least 6 functioning Quests, so that 3-4 students share one. It would be great if you can make sure that your team has one powerful Windows computer for the Quest link.
+- We have 8 Quests, so that 3-4 students share one. It would be great if you can make sure that your team has one powerful Windows computer for the Quest link.
 - Each Quest comes with two controllers with batteries and one USB C cable (for the Quest link or building the apk). If your controllers run out of battery, we have extra ones for your to exchange.
 - The Quests are already in developer mode. This [tutorial](https://developers.meta.com/horizon/documentation/unity/unity-env-device-setup) is a reference about how to set up developer mode.
 - Once the exercise ends (~17h00), please put everything in the case and return them to Amel.

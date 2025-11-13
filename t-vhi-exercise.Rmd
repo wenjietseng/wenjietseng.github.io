@@ -25,7 +25,7 @@ By following this tutorial, you can set up the Unity project for the exercise.
 ## Software
 
 - For this exercise, we use [Unity **2020.3** LTS](https://unity.com/download) because our project is based on an older version of Oculus XR plugin.
-  - We often need to download and manage packages/libraries (for example, Meta SDK for developing Quest). To make our life easier in this exercise, please use [**this link**](https://drive.google.com/file/d/1upSOI9eQInjHFAIj8nMpqvViTV-MI840/view?usp=sharing).
+  - We often need to download and manage packages/libraries (for example, Meta SDK for developing Quest). To make our life easier in this exercise, please use [**this link to download the unity project**](https://drive.google.com/file/d/1upSOI9eQInjHFAIj8nMpqvViTV-MI840/view?usp=sharing).
   - You can consider installing Android Build Support for your Unity if you don't have a windows computer.
   - [Set up Unity for VR development](https://developers.meta.com/horizon/documentation/unity/unity-project-setup): This page explains the compatibility of two XR plugins, Oculus XR (legacy) and Unity Open XR (future).
 - [Meta Quest link](https://developers.meta.com/horizon/documentation/unity/unity-link/) (highly recommended): If you use a Windows computer with a good graphic card, you can set up the Quest link to make the VR development on Unity easier.

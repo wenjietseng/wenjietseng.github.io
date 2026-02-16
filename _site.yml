@@ -9,7 +9,7 @@ navbar:
       href: index.html
     - text: "CV"
       # icon: fa-solid fa-file
-      href: assets/pdf/WJT_CV.pdf
+      href: assets/pdf/WJT-cv-website.pdf
     - text: "Research"
       # icon: fa-solid fa-book-open
       href: research.html

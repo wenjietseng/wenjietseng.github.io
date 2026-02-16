@@ -71,7 +71,7 @@ We conducted one lab study ($N=28$) and two online studies (pilot: $N=97$ and fo
 to investigate the influence of visuomotor asynchrony given (1) order, meaning early or late, (2) duration and magnitude while controlling the order, and (3) the interaction between order and magnitude.
 Our results indicate a significant order effect---later visuomotor asynchrony decreased the rating of body-ownership judgments more---but no convergent evidence on magnitude. We discuss how body-ownership judgments may be formed sensorily or affectively.
 
-[`r fa("book")` IJHCS '25 (in press)]()
+[`r fa("book")` IJHCS '25 (in press)](https://www.sciencedirect.com/science/article/pii/S1071581925002198)
 [`r fa("database")` OSF Repository](https://osf.io/8b4aw/overview)
 
 ---

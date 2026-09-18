@@ -7,14 +7,12 @@ output: html_document
 library(fontawesome)
 ```
 
-
-Wen-Jie Tseng is a Postdoctoral Researcher at the Institute for Intelligent Systems and Robotics (ISIR), Sorbonne Université, France, with the [HCI Sorbonne](https://hci.isir.upmc.fr/) group. 
-He received his Ph.D. in Computer Science from the Technical University of Darmstadt, Germany. 
-His research interests focus on understanding bodily experiences in Virtual Reality (VR) through behavioral studies and interaction design. 
-His work has been published in Human-Computer Interaction (HCI) venues such as ACM CHI, ACM UIST, and IEEE VR. 
-Wen-Jie conducted his doctoral research at the [HCI Labs](https://www.informatik.tu-darmstadt.de/hci/hci_tuda/index.en.jsp), TU Darmstadt, and the [DIVA Group](https://diva.telecom-paristech.fr/), Télécom Paris, and completed a research stay at the [Human-Centred Computing Section](https://di.ku.dk/english/research/human-centred-computing/), University of Copenhagen. 
-He holds an M.Sc. in Computer Science and a B.Sc. in Psychology, both earned in Taiwan.
-
+I am a Postdoctoral Researcher at [HCI Sorbonne](https://hci.isir.upmc.fr/), Institute for Intelligent Systems and Robotics (ISIR), Sorbonne Université, France.
+My research interests lie at the intersection of eXtended Reality (XR), human-computer interaction (HCI), cognitive science, and haptics.
+I received my Ph.D. in Computer Science from the Technical University of Darmstadt in 2025.
+My doctoral research focused on understanding and mitigating the risk of users colliding with their physical surroundings while interacting in virtual reality (VR) across diverse physical environments.
+I have published research on XR in top HCI venues, including ACM CHI, ACM UIST, IEEE VR, and IJHCS.
+I did my doctoral research at the [HCI Labs](https://www.informatik.tu-darmstadt.de/hci/hci_tuda/index.en.jsp), TU Darmstadt, and the [DIVA Group](https://diva.telecom-paristech.fr/), Télécom Paris, and completed a research stay at the [Human-Centred Computing Section](https://di.ku.dk/english/research/human-centred-computing/), University of Copenhagen.
 
 <center>
 ![](assets/img/breakout.png){border-radius=10px, width=150px}

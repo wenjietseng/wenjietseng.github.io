@@ -30,7 +30,9 @@ I did my doctoral research at the [HCI Labs](https://www.informatik.tu-darmstadt
 
 ---
 
-### Selected Publications
+### Research: Democratizing Multisensory Interaction for XR
+
+Selected Publications
 
 **1) Does the Peak-End Rule Apply to Judgments of Body Ownership in Virtual Reality?**
 

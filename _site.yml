@@ -10,9 +10,9 @@ navbar:
     - text: "CV"
       # icon: fa-solid fa-file
       href: assets/pdf/WJT-cv-website.pdf
-    - text: "Research"
+    #- text: "Research"
       # icon: fa-solid fa-book-open
-      href: research.html
+     # href: research.html
     - text: "Teaching"
       # icon: fa-solid fa-person-chalkboard
       href: teaching.html
